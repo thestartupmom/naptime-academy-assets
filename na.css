@@ -48,7 +48,7 @@
 .na .mast{border-bottom:1px solid var(--hairline);background:var(--white);}
 .na .mast__in{max-width:var(--maxw);margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;}
 .na .mast__logo{font-family:var(--serif);font-size:24px;color:var(--ink);}
-.na .mast__logo b{color:var(--red);font-weight:400;}
+.na .mast__logo b{color:var(--red);font-weight:400;font-style:italic;}
 .na .mast__tag{font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);}
 .na .mast__back{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink);text-decoration:none;border:1px solid var(--hairline);border-radius:100px;padding:8px 15px;transition:background .15s ease,color .15s ease;white-space:nowrap;}
 .na .mast__back:hover{background:var(--red);color:#fff;}
