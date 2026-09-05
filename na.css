@@ -92,10 +92,10 @@
 .na .doormap{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:12px;}
 .na .doormap::before{content:'';position:absolute;left:17%;right:17%;top:42px;border-top:2px dotted var(--tan);z-index:0;}
 .na .stop{position:relative;z-index:1;text-align:center;padding:0 6px;}
-.na .stop .badge{width:84px;height:84px;border-radius:50%;background:var(--white);border:1px solid var(--hairline);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 8px 22px rgba(30,30,30,.09);color:var(--red);}
+.na .stop .badge{width:84px;height:84px;border-radius:50%;background:var(--white);border:1px solid var(--hairline);display:flex;align-items:center;justify-content:center;margin:0 auto 22px;box-shadow:0 8px 22px rgba(30,30,30,.09);color:var(--red);}
 .na .stop .badge svg{width:44px;height:44px;}
 .na .stop.lead .badge{background:var(--red);color:#fff;}
-.na .stop .tag{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#fff;background:var(--red);border:1px solid var(--hairline);border-radius:100px;padding:3px 10px;margin-bottom:9px;}
+.na .stop .tag{position:absolute;top:74px;left:50%;transform:translateX(-50%);z-index:2;font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:#fff;background:var(--red);border:1px solid var(--hairline);border-radius:100px;padding:3px 10px;margin:0;white-space:nowrap;box-shadow:0 3px 8px rgba(30,30,30,.2);}
 .na .stop h3{font-size:27px;margin:0 0 6px;}
 .na .stop p{font-size:15px;line-height:1.55;max-width:19em;margin:0 auto;}
 .na .power{display:flex;gap:5px;align-items:center;justify-content:center;margin:14px 0 7px;}
