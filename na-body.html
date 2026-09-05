@@ -2,28 +2,35 @@
 <header class="mast">
   <div class="mast__in">
     <div class="mast__logo"><b>Naptime</b> Academy</div>
-    <div class="mast__tag">Claude Basics</div>
+    <a class="mast__back" href="#community-link">&larr; Back to the community</a>
   </div>
 </header>
+
+<!-- SECTION NAV (left rail on desktop, sticky chip bar on mobile) -->
+<nav class="toc" aria-label="On this page">
+  <a href="#meet" data-sec="meet"><span class="toc-n">1</span>Meet Claude</a>
+  <a href="#homebase" data-sec="homebase"><span class="toc-n">2</span>Your Homebase</a>
+  <a href="#choose" data-sec="choose"><span class="toc-n">3</span>Choose your door</a>
+</nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
     <span class="eyebrow">Claude Basics</span>
-    <h1>Not getting good results with Claude? Let's <em>fix that.</em></h1>
+    <h1>Not getting good results with Claude? <em>Let's fix that.</em></h1>
     <p class="lead">No overwhelm. I'll walk you through it the way I'd do it at my kitchen table. Get a real win in the first ten minutes, and by the end Claude will actually sound like you.</p>
     <div class="aside"><span class="hand">no tech skills required.</span></div>
-    <div style="margin-top:26px"><a class="btn" href="https://claude.ai/referral/AqFina3f3Q" target="_blank" rel="noopener">New to Claude? Get a free week &rarr;</a></div>
+    <div style="margin-top:36px"><a class="btn" href="https://claude.ai" target="_blank" rel="noopener">New to Claude? Start free at claude.ai &rarr;</a></div>
     <div class="pill-row">
       <span class="pill"><svg viewBox="0 0 14 14" class="icon"><path d="M7 12S2 8.7 2 5.5A2.5 2.5 0 0 1 7 4a2.5 2.5 0 0 1 5 1.5C12 8.7 7 12 7 12z"/></svg>Free for members</span>
-      <span class="pill"><svg viewBox="0 0 14 14" class="icon"><circle cx="7" cy="7" r="5.2"/><path d="M7 4.2V7l2 1.4"/></svg>About 30 min, at your pace</span>
-      <span class="pill"><svg viewBox="0 0 14 14" class="icon"><path d="M8 1.5 3.4 8H7l-1 4.5L11 6H7.4z"/></svg>Nothing to install</span>
+      <span class="pill"><svg viewBox="0 0 14 14" class="icon"><circle cx="7" cy="7" r="5.2"/><path d="M7 4.2V7l2 1.4"/></svg>Done at your pace</span>
+      <span class="pill"><svg viewBox="0 0 14 14" class="icon"><path d="M8 1.5 3.4 8H7l-1 4.5L11 6H7.4z"/></svg>Quick start guide</span>
     </div>
   </div>
 </section>
 
 <!-- 1. MEET CLAUDE (journey map) -->
-<section>
+<section id="meet">
   <div class="wrap">
     <div class="head">
       <span class="eyebrow">Step 1</span>
@@ -54,18 +61,21 @@
     <div class="howi">
       <span class="sig">how I work</span>
       <p>Real talk: I run my whole business in Code now. Everything lives in one place and it's just easier for me. But I started in Chat like everyone, and that's where I'd point you first. Pick the door that feels right.</p>
+      <span class="howi-sign">Meg</span>
     </div>
   </div>
 </section>
 
 <!-- 2. BUILD YOUR HOMEBASE -->
-<section>
+<section id="homebase">
   <div class="wrap">
+    <div class="head">
+      <span class="hb-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/></svg></span>
+      <span class="eyebrow">Step 2 · do this once</span>
+      <h2>Build your <em>Homebase.</em></h2>
+    </div>
     <div class="hb">
-      <span class="ico"><svg class="icon" viewBox="0 0 24 24" style="width:32px;height:32px"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/></svg></span>
-      <span class="eyebrow" style="color:var(--red)">Step 2 · do this once</span>
-      <h2>First, teach it to sound like <em>you.</em></h2>
-      <p>Most people's AI sounds like a robot because they never told it who they are. Your Brand Homebase fixes that. Open a brand new chat, paste this in, and answer the questions. About 15 minutes, no wrong answers. It writes your Homebase for you.</p>
+      <p>First, teach it to sound like you. Most people's AI sounds like a robot because they never told it who they are. Your Brand Homebase fixes that. Open a brand new chat, paste this in, and answer the questions. About 15 minutes, no wrong answers. It writes your Homebase for you.</p>
       <p style="margin:6px 0 0"><span class="hand" style="font-size:23px">this is the whole secret.</span></p>
       <div class="codebox">
         <button class="copybtn" data-copy="#interview">Copy</button>
@@ -106,11 +116,18 @@ When we're done, assemble it into one clean document with these headings: My Bra
       </div>
       <p style="margin-top:18px;font-size:15px;">When it's done, it hands you your Homebase. Keep it close. You'll carry it through whichever door you pick next.</p>
     </div>
+    <div class="firstwin">
+      <span class="eyebrow" style="color:var(--red)">Your first win</span>
+      <h3>Now feel it <em>work.</em></h3>
+      <p style="max-width:34em;">Back in that same chat, paste this. Watch it come out sounding like you, not a robot:</p>
+      <div class="fwbox"><button class="cp" data-copy="#fw-prompt">Copy</button><span id="fw-prompt">Using my Brand Homebase, write me 3 Instagram captions in my voice about what I'm up to today.</span></div>
+      <p style="max-width:34em;margin-top:12px;">The first line that sounds like <em>you</em>? That is the whole thing. That is why you did this.</p>
+    </div>
   </div>
 </section>
 
 <!-- 3. CHOOSE YOUR DOOR -->
-<section class="center">
+<section class="center" id="choose">
   <div class="wrap">
     <div class="head">
       <span class="eyebrow">Step 3</span>
@@ -121,14 +138,17 @@ When we're done, assemble it into one clean document with these headings: My Bra
       <button class="pcard" role="tab" aria-selected="true" data-path="chat">
         <span class="pico"><svg class="mascot" viewBox="0 0 40 40"><path d="M8 9h24a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H19l-7 6v-6H8a3 3 0 0 1-3-3V12a3 3 0 0 1 3-3z"/><circle class="fill" cx="16" cy="16" r="1.4"/><circle class="fill" cx="24" cy="16" r="1.4"/><path d="M16 19c2.4 1.6 5.6 1.6 8 0"/></svg></span>
         <h3>Chat</h3><p>The easiest start. Set up your voice and get real results today.</p>
+        <span class="pbtn"></span>
       </button>
       <button class="pcard" role="tab" aria-selected="false" data-path="cowork">
         <span class="pico"><svg class="mascot" viewBox="0 0 40 40"><rect x="9" y="13" width="22" height="16" rx="5"/><path d="M20 13V8.5"/><circle class="fill" cx="20" cy="7" r="1.7"/><circle class="fill" cx="16" cy="20" r="1.4"/><circle class="fill" cx="24" cy="20" r="1.4"/><path d="M16.5 25h7"/><path d="M9 20H6M31 20h3"/></svg></span>
         <h3>Cowork</h3><p>Hand off whole jobs and let Claude run them. (Paid plan.)</p>
+        <span class="pbtn"></span>
       </button>
       <button class="pcard" role="tab" aria-selected="false" data-path="code">
         <span class="pico"><svg class="mascot" viewBox="0 0 40 40"><rect x="6" y="9" width="28" height="19" rx="3"/><circle class="fill" cx="16" cy="17" r="1.4"/><circle class="fill" cx="24" cy="17" r="1.4"/><path d="M16 21.5c2.4 2 5.6 2 8 0"/><path d="M15 33h10M20 28v5"/></svg></span>
         <h3>Code</h3><p>Run your whole business from one place, the way I do.</p>
+        <span class="pbtn"></span>
       </button>
     </div>
 
@@ -156,9 +176,9 @@ When we're done, assemble it into one clean document with these headings: My Bra
         </li>
         <li class="step"><span class="dot">3</span>
           <h4><svg class="icon" viewBox="0 0 24 24"><circle cx="8" cy="9" r="4"/><path d="M11 12l9 9"/><path d="M17 18l2-2"/></svg>Give it your tools</h4>
-          <p>Open <b>Search and tools</b>, then <b>Add connectors</b>, and connect your email, calendar, and notes. Now it can pull from the tools you already use.</p>
+          <p>Click the <b>+</b> in the chat box, open <b>Connectors</b>, then <b>Manage connectors</b>, and connect your email, calendar, and notes. Now it can pull from the tools you already use.</p>
           <div class="screen">
-            <div class="screen__bar"><i></i><i></i><i></i><span>Search and tools &rsaquo; Add connectors</span></div>
+            <div class="screen__bar"><i></i><i></i><i></i><span>Connectors &rsaquo; Manage connectors</span></div>
             <div class="screen__body">
               <div class="uirow"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Gmail <span class="uichip uichip--ghost">Connect</span></div>
               <div class="uirow"><svg class="icon" viewBox="0 0 24 24"><path d="M4 6h16v13H4z"/><path d="M4 9h16"/></svg> Google Drive <span class="uichip uichip--ghost">Connect</span></div>
@@ -188,7 +208,7 @@ When we're done, assemble it into one clean document with these headings: My Bra
       <ol class="steps">
         <li class="step"><span class="dot">1</span>
           <h4><svg class="icon" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>What you need</h4>
-          <p>Cowork runs on a paid plan (Pro, Max, or Team, and your <a href="https://claude.ai/referral/AqFina3f3Q" target="_blank" rel="noopener">free week from my link</a> counts). To let it work with your own files, keep the <b>Claude desktop app</b> open on your Mac (grab it free from claude.ai if you don't have it yet). That's the whole checklist.</p>
+          <p>Cowork runs on any paid plan (Pro, Max, Team, or Enterprise). To let it work with your own files, keep the <b>Claude desktop app</b> open on your computer (grab it free from claude.ai if you don't have it yet). That's the whole checklist.</p>
         </li>
         <li class="step"><span class="dot">2</span>
           <h4><svg class="icon" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v4h-4"/></svg>Open Cowork</h4>
@@ -236,7 +256,7 @@ When we're done, assemble it into one clean document with these headings: My Bra
       <ol class="steps">
         <li class="step"><span class="dot">1</span>
           <h4><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>Get your Mac ready</h4>
-          <p>Good news, nothing extra to install first. You just need a Mac (macOS 13 or newer) and a Claude Pro or Max plan (your <a href="https://claude.ai/referral/AqFina3f3Q" target="_blank" rel="noopener">free week from my link</a> counts). Then open <b>Terminal</b>: press <b>Cmd + Space</b>, type "Terminal," and press Enter. That window with the blinking line is where it all happens.</p>
+          <p>Good news, nothing extra to install first. You just need a Mac (macOS 13 or newer) and a Claude Pro or Max plan. Then open <b>Terminal</b>: press <b>Cmd + Space</b>, type "Terminal," and press Enter. That window with the blinking line is where it all happens.</p>
         </li>
         <li class="step"><span class="dot">2</span>
           <h4><svg class="icon" viewBox="0 0 24 24"><path d="M12 3v11"/><path d="M8 11l4 4 4-4"/><path d="M5 20h14"/></svg>Install Claude Code</h4>
@@ -291,7 +311,7 @@ claude</code></div>
 <!-- CLOSE -->
 <section class="close">
   <div class="wrap">
-    <h2>That's it. You're <em>set up.</em></h2>
+    <h2>That's it. <em>You're set up.</em></h2>
     <p style="max-width:30em;margin:0 auto;">Now go make something small, then share it in <b>All the Claude Things</b> so I can cheer you on.</p>
     <p style="font-size:13px;margin:16px auto 0;max-width:30em;"><a href="https://academy.claude.com" target="_blank" rel="noopener">Want to go deeper? Anthropic's free Claude Academy &rarr;</a></p>
     <span class="sig">so proud of you. now go play.<br>love, Meg</span>
