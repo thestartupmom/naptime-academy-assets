@@ -37,6 +37,7 @@
 .na .eyebrow{font-family:var(--display);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.22em;color:var(--ink);display:block;margin:0 0 16px;}
 .na .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
 .na section{padding:80px 0;}
+.na section[id]{scroll-margin-top:64px;}
 .na .icon{stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
 .na .mast{border-bottom:1px solid var(--hairline);background:var(--white);position:sticky;top:0;z-index:50;}
 .na .mast__in{max-width:var(--maxw);margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
