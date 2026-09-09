@@ -55,9 +55,9 @@
 .na .feat__aside{position:relative;display:inline-block;margin:0 0 26px 6px;font-family:var(--hand);color:var(--red);font-size:27px;line-height:1;transform:rotate(-2.5deg);}
 .na .feat__aside svg{position:absolute;left:100%;top:-4px;width:46px;height:44px;margin-left:8px;overflow:visible;}
 .na .feat__aside svg path{stroke:var(--red);fill:none;stroke-width:1.6;stroke-linecap:round;}
-.na .feat{display:grid;grid-template-columns:1.3fr .7fr;align-items:stretch;background:var(--white);border:1px solid var(--hairline);border-radius:20px;overflow:hidden;box-shadow:0 18px 44px rgba(30,30,30,.09);}
-.na .feat__media{position:relative;aspect-ratio:16/9;background:var(--cream);}
-.na .feat__media iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.na .feat{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);align-items:start;background:var(--white);border:1px solid var(--hairline);border-radius:20px;overflow:hidden;box-shadow:0 18px 44px rgba(30,30,30,.09);}
+.na .feat__media{position:relative;height:0;padding-top:56.25%;overflow:hidden;background:var(--cream);align-self:start;}
+.na .feat__media iframe{position:absolute!important;top:0;left:0;width:100%!important;height:100%!important;max-width:none!important;border:0;display:block;}
 .na .feat__body{padding:30px 32px 28px;display:flex;flex-direction:column;justify-content:center;}
 .na .tagrow{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap;}
 .na .new{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--red);border:1px solid var(--hairline);border-radius:100px;padding:5px 11px;}
@@ -128,7 +128,7 @@
 @media(prefers-reduced-motion:reduce){.na *{animation:none!important;transition:none!important;}
 .na .ticker__track{animation:none;}
 .na.js .rv{opacity:1;transform:none;}}
-@media(max-width:1024px){.na .feat{grid-template-columns:1fr 1fr;}}
+@media(max-width:1024px){.na .feat{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}}
 @media(max-width:860px){.na section{padding:60px 0;}
 .na .lib--live{padding:64px 0;}
 .na .lib--soon{padding:44px 0 52px;}
@@ -136,7 +136,6 @@
 .na .head .note{padding-bottom:0;}
 .na .ticker__track{padding:14px 0;}
 .na .feat{grid-template-columns:1fr;}
-.na .feat__media{min-height:0;aspect-ratio:16/9;}
 .na .feat__body{padding:26px 24px 28px;}
 .na .feat__aside{font-size:24px;}
 .na .grid{grid-template-columns:1fr 1fr;}}
