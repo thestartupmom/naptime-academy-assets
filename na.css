@@ -71,6 +71,7 @@
   .na .toc a:hover{color:var(--ink);}
   .na .toc a.active{background:none;color:var(--red);border-left-color:var(--red);}
 }
+@media(max-width:1439px){.na .toc{display:none!important;}}
 
 /* hero */
 .na .hero{background:var(--white);border-bottom:1px solid var(--hairline);text-align:center;padding:84px 0 72px;}
