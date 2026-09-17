@@ -1,0 +1,1394 @@
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#bd1b1b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <symbol id="i-zip" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M10.5 6v1.5M10.5 9v1.5M10.5 12v1.5"/><rect x="9.5" y="15" width="2" height="3" rx=".5"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3.5 7.5a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l8-8M16 7l2.5 2.5M14 9l2 2"/></symbol>
+    <symbol id="i-caption" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="i-tutor" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/><path d="M8 10.5h5M10.5 8v5"/></symbol>
+    <symbol id="i-apify" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.4 3.5 5.3 3.5 8.5s-1.1 6.1-3.5 8.5c-2.4-2.4-3.5-5.3-3.5-8.5s1.1-6.1 3.5-8.5z"/></symbol>
+    <symbol id="i-design" viewBox="0 0 24 24"><path d="M4 20l1.2-4L16 5.2 18.8 8 8 18.8z"/><path d="M14 7l3 3"/></symbol>
+    <symbol id="i-make" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6L19 10l-5.1 1.4L12 17l-1.9-5.6L5 10l5.1-1.4z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+    <symbol id="i-dinner" viewBox="0 0 24 24"><path d="M3 12h18"/><path d="M5 12a7 7 0 0 0 14 0"/><path d="M9 8c0-1.5 1-2 1-3.5M13 8c0-1.5 1-2 1-3.5"/></symbol>
+    <symbol id="i-sync" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-14.3 4.9"/><path d="M4 12a8 8 0 0 1 14.3-4.9"/><path d="M18.5 3.5v3.8h-3.8"/><path d="M5.5 20.5v-3.8h3.8"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v11"/><path d="M7.5 10.5 12 15l4.5-4.5"/><path d="M5 20h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5"/><path d="M6 8h12v3a6 6 0 0 1-12 0z"/><path d="M12 17v4"/></symbol>
+    <symbol id="i-app" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-5 4v-4H4z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 9l3 2.5L7 14"/><path d="M12 14h5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="9.5" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10 5 7 4.5 4 5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5z"/><path d="M12 6.5v13"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.4-7 10-7 10z"/></symbol>
+    <symbol id="i-save" viewBox="0 0 24 24"><path d="M5 4h11l3 3v13H5z"/><path d="M8 4v5h7V4"/><path d="M8 20v-6h8v6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="M14.5 6 8.5 12l6 6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<!-- MASTHEAD -->
+<header class="mast">
+  <div class="mast__in">
+    <div class="mast__logo"><b>Naptime</b> Academy</div>
+    <a class="mast__back" href="https://www.thestartupmom.com/naptime-academy#skills">&larr; Back to the hub</a>
+  </div>
+</header>
+
+<main class="nsk">
+
+<!-- =========================================================
+     START HERE (no hash)
+     ========================================================= -->
+<div class="view view--overview">
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <span class="eyebrow">Claude skills</span>
+      <h1>My favorite <em>Claude skills.</em></h1>
+      <p class="lead">You voted for this one! These are the skills doing the heavy lifting in my business and my home. I took out all my personal stuff, so you can add them to your Claude in about two minutes and make them your own.</p>
+      <div class="aside"><span class="hand">you picked this one!</span></div>
+      <a class="btn" href="#all-skills">Pick a skill <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+    </div>
+  </section>
+
+  <section id="start" class="bg-cream">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Start here</span>
+        <h2>First, what's <em>a skill?</em></h2>
+        <p class="lead-lg">Think of a skill like a recipe card for Claude. You add it once, and every time that job comes up, Claude follows the recipe the same great way, without you typing out your instructions every time.</p>
+      </div>
+      <div class="metaphor">
+        <svg class="card-doodle" viewBox="0 0 92 70" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 10.2c24-1.6 50-.9 75.4.3 1.3 16.4 1.1 33.7-.4 50.1-25.2 1.7-50.9 1.3-75.6-.6-1.4-16.6-1.1-33.1.6-49.8z"/><path d="M17 23.5c14.8-.9 29.6-.6 44.6.1"/><path d="M17 34.2c19.3-.8 38.8-.7 58 .2"/><path d="M17 44.6c12.4-.5 24.8-.4 37.2.3"/><path d="M71 45c2.3 1.9 3.6 4.6 7.6 1.3"/></svg>
+        <div>
+          <p>You don't have to remember a special command, either. Just ask for the thing, like "caption this reel," and Claude pulls out the right recipe card on its own.</p>
+          <span class="sig">easy peasy.</span>
+        </div>
+      </div>
+
+      <div class="subhead">
+        <h3>Adding one takes <em>about two minutes.</em></h3>
+        <p>Here's the whole idea. Each skill's page walks you through it, step by step, with pictures.</p>
+      </div>
+      <div class="howit">
+        <div class="howit__i"><span class="num">1</span><h4>Turn on one setting</h4><p>Only the very first time.</p></div>
+        <div class="howit__i"><span class="num">2</span><h4>Download it</h4><p>Tap the red button on the skill's page. Leave the file zipped.</p></div>
+        <div class="howit__i"><span class="num">3</span><h4>Upload it</h4><p>In Claude, click Customize, then Skills.</p></div>
+        <div class="howit__i"><span class="num">4</span><h4>Flip it on</h4><p>Then just ask for the job.</p></div>
+        <div class="howit__foot"><b>Good to know:</b> skills work on every Claude plan, even the free one. A couple of mine work a little differently, like Apify, and their pages show you how.</div>
+      </div>
+
+      <div class="subhead">
+        <h3>Two things that make them <em>even better.</em></h3>
+      </div>
+      <div class="helpers">
+        <div class="helper">
+          <span class="hi"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></span>
+          <div>
+            <h3>Your Brand Homebase</h3>
+            <p>A few of these skills read your Homebase, so they sound like you from the very first try. Haven't made yours yet? It's step 2 of <a href="https://www.thestartupmom.com/claude-basics#homebase">Claude Basics</a>, and it takes about 15 minutes.</p>
+          </div>
+        </div>
+        <div class="helper">
+          <span class="hi"><svg class="icon" aria-hidden="true"><use href="#i-plug"/></svg></span>
+          <div>
+            <h3>Connectors</h3>
+            <p>Connectors let Claude peek at your other apps, like your calendar, your Notion, or Apify, so some of these skills can do even more. <a href="https://www.thestartupmom.com/claude-basics#choose">Claude Basics</a> shows you how.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="all-skills" class="bg-white rule">
+    <div class="wrap">
+      <div class="head head--center">
+        <span class="eyebrow">Pick a skill</span>
+        <h2>Start with the one <em>you need most.</em></h2>
+        <p class="lead-lg">Each one has its own page with everything you need.</p>
+      </div>
+      <nav class="index" aria-label="The seven skills">
+        <ol class="index__list">
+          <li><a href="#caption"><span class="index__n">01</span><span class="index__ico"><svg class="icon" aria-hidden="true"><use href="#i-caption"/></svg></span><span class="index__txt"><strong>Caption</strong><small>Captions in your voice, ready to paste</small></span><span class="index__arw" aria-hidden="true">&rarr;</span></a></li>
+          <li><a href="#tutor-me"><span class="index__n">02</span><span class="index__ico"><svg class="icon" aria-hidden="true"><use href="#i-tutor"/></svg></span><span class="index__txt"><strong>Tutor Me</strong><small>Learn why a post took off</small></span><span class="index__arw" aria-hidden="true">&rarr;</span></a></li>
+          <li><a href="#apify"><span class="index__n">03</span><span class="index__ico"><svg class="icon" aria-hidden="true"><use href="#i-apify"/></svg></span><span class="index__txt"><strong>Apify</strong><small>Real numbers from real posts</small></span><span class="index__arw" aria-hidden="true">&rarr;</span></a></li>
+          <li><a href="#impeccable"><span class="index__n">04</span><span class="index__ico"><svg class="icon" aria-hidden="true"><use href="#i-design"/></svg></span><span class="index__txt"><strong>Impeccable <span class="index__tag">Claude Code</span></strong><small>Make anything look designed</small></span><span class="index__arw" aria-hidden="true">&rarr;</span></a></li>
+          <li><a href="#skill-creator"><span class="index__n">05</span><span class="index__ico"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg></span><span class="index__txt"><strong>Skill Creator</strong><small>Build your own skills</small></span><span class="index__arw" aria-hidden="true">&rarr;</span></a></li>
+          <li><a href="#parent-helper"><span class="index__n">06</span><span class="index__ico"><svg class="icon" aria-hidden="true"><use href="#i-dinner"/></svg></span><span class="index__txt"><strong>Parent Helper</strong><small>Dinner planned, grocery list made</small></span><span class="index__arw" aria-hidden="true">&rarr;</span></a></li>
+          <li><a href="#sync-truth"><span class="index__n">07</span><span class="index__ico"><svg class="icon" aria-hidden="true"><use href="#i-sync"/></svg></span><span class="index__txt"><strong>Sync Truth</strong><small>Change it once, fixed everywhere</small></span><span class="index__arw" aria-hidden="true">&rarr;</span></a></li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+</div>
+
+<!-- =========================================================
+     THE SKILL PAGES (one shows at a time)
+     ========================================================= -->
+<div class="view view--skills">
+
+  <nav class="skillnav" aria-label="My favorite Claude skills">
+    <div class="skillnav__in">
+      <a class="skillnav__all" href="#all-skills">&larr; All skills</a>
+      <div class="skillnav__tabs">
+        <a href="#caption"><svg class="icon" aria-hidden="true"><use href="#i-caption"/></svg>Caption</a>
+        <a href="#tutor-me"><svg class="icon" aria-hidden="true"><use href="#i-tutor"/></svg>Tutor Me</a>
+        <a href="#apify"><svg class="icon" aria-hidden="true"><use href="#i-apify"/></svg>Apify</a>
+        <a href="#impeccable"><svg class="icon" aria-hidden="true"><use href="#i-design"/></svg>Impeccable</a>
+        <a href="#skill-creator"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg>Skill Creator</a>
+        <a href="#parent-helper"><svg class="icon" aria-hidden="true"><use href="#i-dinner"/></svg>Parent Helper</a>
+        <a href="#sync-truth"><svg class="icon" aria-hidden="true"><use href="#i-sync"/></svg>Sync Truth</a>
+      </div>
+      <div class="skillnav__step">
+        <a class="skillnav__arrow" data-step="prev" href="#start" aria-label="Previous skill"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></a>
+        <span class="skillnav__count">Skill <b>1</b> of 7</span>
+        <a class="skillnav__arrow" data-step="next" href="#tutor-me" aria-label="Next skill"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></a>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="toc" data-for="apify" aria-label="On this page">
+    <a href="#apify-do">What it does</a>
+    <a href="#apify-free">It's free</a>
+    <a href="#apify-setup">Set it up</a>
+    <a href="#apify-try">First try</a>
+    <a href="#apify-ideas">10 ideas</a>
+    <a href="#apify-recipes">Recipes</a>
+    <a href="#apify-rules">The rules</a>
+  </nav>
+
+  <!-- ============ 1. CAPTION ============ -->
+  <article class="sk" id="caption" data-name="Caption" aria-labelledby="caption-h">
+    <section class="sk__hero">
+      <div class="wrap sk__top">
+        <div class="sk__head">
+          <div class="skill__tag">
+            <span class="skill__badge"><svg class="icon" aria-hidden="true"><use href="#i-caption"/></svg></span>
+            <span class="eyebrow">Skill 1 of 7 &middot; Writing</span>
+          </div>
+          <h1 id="caption-h" tabindex="-1">Captions that <em>sound like you.</em></h1>
+          <p class="lead-lg">Tell it about your post, and it hands you one caption in your voice, ready to paste. No "Here's your caption!", no list of ten options, nothing to delete first.</p>
+        </div>
+        <aside class="glance" aria-label="Caption at a glance">
+          <a class="btn" data-dl href="../naptime-academy-skills/dist/caption.zip" download><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Download Caption</a>
+          <ul class="facts">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>About 2 minutes to add</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Works on every Claude plan, even the free one</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-app"/></svg>Use it in the Claude app, Cowork, or Claude Code</li>
+          </ul>
+          <a class="glance__link" href="#caption-add">How to add it &darr;</a>
+        </aside>
+        <div class="sk__why">
+          <h3>Why I love it</h3>
+          <p>I use this one all the time. I film, I type "caption this," I paste, I post. It puts the hook first (that's the line people see before they tap "more"), adds something your post doesn't already say, and ends with one clear ask, like "comment GUIDE and I'll send it to you." It even skips the stuff that makes a caption sound like AI wrote it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white" id="caption-demo">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">See it in action</span>
+          <h2>One caption, <em>ready to paste.</em></h2>
+          <p class="lead-lg">You tell it about your post. It hands back one caption in your voice.</p>
+        </div>
+        <div class="screen chat">
+          <div class="screen__bar"><i></i><i></i><i></i><span>Claude</span></div>
+          <div class="screen__body">
+            <div class="msg msg--you"><span class="msg__who">You</span><p>Caption this: a reel of me filming 3 reels while my baby naps</p></div>
+            <div class="msg msg--claude"><span class="msg__who">Claude</span>
+              <p>Three reels. One nap. Zero overthinking.</p>
+              <p>I write my hooks the night before, so when nap time hits, I just press record. Same outfit, same spot, back to back.</p>
+              <p>Comment NAP and I'll send you my filming checklist.</p>
+            </div>
+            <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>ready to paste!</span></div>
+          </div>
+          <div class="screen__cap">Example</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cream" id="caption-add">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">Do this once</span>
+          <h2>Add it in <em>2 minutes.</em></h2>
+          <p class="lead-lg">Pick where you use Claude, then follow the steps.</p>
+        </div>
+        <div data-add="caption"><p>Download it with the red button above. Then in Claude, click Customize, then Skills, then +, then Create skill, then Upload a skill. Flip it on.</p></div>
+      </div>
+    </section>
+
+    <section class="bg-white rule" id="caption-try">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">The fun part</span>
+          <h2>Then <em>try it.</em></h2>
+          <p class="lead-lg">Paste this and fill in the brackets.</p>
+        </div>
+        <div>
+          <div class="prompt">Caption this: [tell it about your reel or post in a sentence or two]<button class="cp" type="button">Copy</button></div>
+          <div class="note"><b>First time using it?</b> If you don't have a Homebase yet, it asks you three quick questions and has you paste a couple of your old captions. After that, it knows your voice.</div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pn" aria-label="More skills">
+      <div class="wrap pn__in">
+        <a class="pn__a" href="#start"><span class="pn__dir">&larr; Start here</span><span class="pn__name">What's a skill?</span></a>
+        <a class="pn__a pn__a--next" href="#tutor-me"><span class="pn__dir">Next skill &rarr;</span><span class="pn__name">Tutor Me</span></a>
+      </div>
+    </nav>
+  </article>
+
+  <!-- ============ 2. TUTOR ME ============ -->
+  <article class="sk" id="tutor-me" data-name="Tutor Me" aria-labelledby="tutor-me-h">
+    <section class="sk__hero">
+      <div class="wrap sk__top">
+        <div class="sk__head">
+          <div class="skill__tag">
+            <span class="skill__badge"><svg class="icon" aria-hidden="true"><use href="#i-tutor"/></svg></span>
+            <span class="eyebrow">Skill 2 of 7 &middot; Content</span>
+          </div>
+          <h1 id="tutor-me-h" tabindex="-1">Learn why a post <em>took off.</em></h1>
+          <p class="lead-lg">Paste the link to a post that did really well, yours or anyone's. It walks you through why it worked, like a tutor sitting right next to you: the hook, how it's put together, and what kept people watching. Then it gives you a fill-in-the-blank version for your niche that you could film by nap time.</p>
+        </div>
+        <aside class="glance" aria-label="Tutor Me at a glance">
+          <a class="btn" data-dl href="../naptime-academy-skills/dist/tutor-me.zip" download><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Download Tutor Me</a>
+          <ul class="facts">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>About 2 minutes to add</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Works on every Claude plan, even the free one</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-app"/></svg>Use it in the Claude app, Cowork, or Claude Code</li>
+          </ul>
+          <a class="glance__link" href="#tutor-me-add">How to add it &darr;</a>
+        </aside>
+        <div class="sk__why">
+          <h3>The best part</h3>
+          <p>Paste 3 to 5 posts from your niche at once, and it spots the pattern. You'll see what's working in your niche right now, and you'll get 5 ideas you could film this week. It works on reels, TikToks, YouTube Shorts, carousels, and regular posts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white" id="tutor-me-demo">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">See it in action</span>
+          <h2>A tutor for <em>any post.</em></h2>
+          <p class="lead-lg">Paste a link. It shows you why the post worked, then how to make your own.</p>
+        </div>
+        <div class="screen chat">
+          <div class="screen__bar"><i></i><i></i><i></i><span>Claude</span></div>
+          <div class="screen__body">
+            <div class="msg msg--you"><span class="msg__who">You</span><p>Tutor me on this post: instagram.com/reel/...</p></div>
+            <div class="msg msg--claude"><span class="msg__who">Claude</span>
+              <span class="msg__h">Why it took off</span>
+              <ol>
+                <li>The hook names a feeling in five words: "I was so tired of this."</li>
+                <li>You see the result in the first 2 seconds, then the how.</li>
+                <li>The caption asks one easy question, so people comment.</li>
+              </ol>
+              <span class="msg__h">Your version</span>
+              <p>"I was so tired of [your struggle]. Here's what finally worked."</p>
+            </div>
+            <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>film this one!</span></div>
+          </div>
+          <div class="screen__cap">Example</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cream" id="tutor-me-add">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">Do this once</span>
+          <h2>Add it in <em>2 minutes.</em></h2>
+          <p class="lead-lg">Pick where you use Claude, then follow the steps.</p>
+        </div>
+        <div data-add="tutor-me"><p>Download it with the red button above. Then in Claude, click Customize, then Skills, then +, then Create skill, then Upload a skill. Flip it on.</p></div>
+      </div>
+    </section>
+
+    <section class="bg-white rule" id="tutor-me-try">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">The fun part</span>
+          <h2>Then <em>try it.</em></h2>
+          <p class="lead-lg">Start with one post, then try a handful.</p>
+          <span class="hand">study it, don't copy it.</span>
+        </div>
+        <div>
+          <span class="prompt__label">One post</span>
+          <div class="prompt">Tutor me on this post: [paste the link]<button class="cp" type="button">Copy</button></div>
+          <span class="prompt__label">A few from your niche</span>
+          <div class="prompt">Tutor me on these posts and tell me what's working in my niche right now: [paste 3 to 5 links]<button class="cp" type="button">Copy</button></div>
+          <div class="note"><b>Even better with Apify</b> (it's the <a href="#apify">next skill</a>). Then you just paste links, and it grabs the real words and numbers for you. No Apify? It asks you to paste the caption and what was said instead.</div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pn" aria-label="More skills">
+      <div class="wrap pn__in">
+        <a class="pn__a" href="#caption"><span class="pn__dir">&larr; Previous skill</span><span class="pn__name">Caption</span></a>
+        <a class="pn__a pn__a--next" href="#apify"><span class="pn__dir">Next skill &rarr;</span><span class="pn__name">Apify</span></a>
+      </div>
+    </nav>
+  </article>
+
+  <!-- ============ 3. APIFY (the one long page) ============ -->
+  <article class="sk" id="apify" data-name="Apify" aria-labelledby="apify-h">
+    <section class="sk__hero">
+      <div class="wrap">
+        <div class="sk__top">
+          <div class="sk__head">
+            <div class="skill__tag">
+              <span class="skill__badge"><svg class="icon" aria-hidden="true"><use href="#i-apify"/></svg></span>
+              <span class="eyebrow">Skill 3 of 7 &middot; Research</span>
+            </div>
+            <h1 id="apify-h" tabindex="-1">Give Claude <em>real numbers.</em></h1>
+            <p class="lead-lg">Here's something most people don't know: Claude can't open an Instagram link or see anyone's numbers. Apify can. It's a website full of little research helpers that gather public info from Instagram, TikTok, YouTube, Facebook, and Google Maps. Connect it to Claude once, and then you just ask in plain words.</p>
+          </div>
+          <aside class="glance" aria-label="Apify at a glance">
+            <a class="btn" href="#apify-setup">Set it up <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+            <ul class="facts">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>About 10 minutes to set up</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><b>$5 of usage free</b> every month, no credit card needed</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-app"/></svg>Works in the Claude app and Claude Code</li>
+            </ul>
+            <a class="glance__link" href="#apify-free">How the free plan works &darr;</a>
+          </aside>
+          <div class="sk__why">
+            <h3>Why I love it</h3>
+            <p>I've used Apify through Claude more than 350 times since July. Half of those run on their own on a schedule, like the one that keeps my numbers up to date.</p>
+          </div>
+        </div>
+        <nav class="jumps" aria-label="On this page">
+          <span class="jumps__label">On this page</span>
+          <a href="#apify-do">What it does</a>
+          <a href="#apify-free">It's free</a>
+          <a href="#apify-setup">Set it up</a>
+          <a href="#apify-try">First try</a>
+          <a href="#apify-ideas">10 ideas</a>
+          <a href="#apify-recipes">Recipes</a>
+          <a href="#apify-rules">The rules</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="bg-cream" id="apify-do">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">Why it's worth it</span>
+          <h2>What it lets <em>you do.</em></h2>
+          <p class="lead-lg">Once it's connected, you just ask Claude in your own words.</p>
+        </div>
+        <ul class="wins">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><span><b>Stop guessing what to post.</b>See the real hooks, captions, and numbers behind posts that are working in your niche.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-caption"/></svg><span><b>Turn comments into content.</b>Pull the questions people keep asking, and you've got weeks of ideas in their own words.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><b>Check your own numbers.</b>Find your best posts and what they have in common, in seconds.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><span><b>Make a list of brands to pitch.</b>Find local businesses and their public contact info, all in one list.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><span><b>Turn videos into notes.</b>Grab what was said in a YouTube video, or have Claude read a whole website.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="freeband" id="apify-free" aria-labelledby="apify-free-h">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">The best part</span>
+          <h2 id="apify-free-h">You get $5 free, <em>every month.</em></h2>
+          <p>Apify's free plan gives you $5 of usage every month. That's plenty for trying everything on this page.</p>
+        </div>
+        <div class="perks">
+          <div class="perk">
+            <div class="big">$5<span> free</span></div>
+            <h4>Every month</h4>
+            <p>Enough to look at more than a thousand Instagram posts. It starts fresh every month.</p>
+          </div>
+          <div class="perk">
+            <div class="big">No<span> card</span></div>
+            <h4>To sign up</h4>
+            <p>You don't need a credit card to make your free account.</p>
+          </div>
+          <div class="perk">
+            <div class="big">No<span> bills</span></div>
+            <h4>On the free plan</h4>
+            <p>If you ever use up your $5, it just pauses until next month. You'll never get a surprise bill.</p>
+          </div>
+        </div>
+        <p class="fine">Based on Apify's free plan as of September 2026.</p>
+      </div>
+    </section>
+
+    <section class="bg-white" id="apify-setup">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">Do this once</span>
+          <h2>Set it up <em>in 10 minutes.</em></h2>
+          <p class="lead-lg">Pick where you use Claude, then go one step at a time.</p>
+        </div>
+        <div class="doors" data-doors>
+          <div class="seg" role="tablist" aria-label="Where do you use Claude?">
+            <button type="button" role="tab" aria-selected="true" data-door="app"><svg class="icon" aria-hidden="true"><use href="#i-app"/></svg>The Claude app</button>
+            <button type="button" role="tab" aria-selected="false" data-door="code"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>Claude Code</button>
+          </div>
+          <div class="door active" data-door-panel="app">
+          <div class="walk" data-walk>
+            <div class="walk__tabs" role="tablist" aria-label="Steps">
+              <button type="button" class="walk__tab" role="tab"><span class="n">1</span><span class="lbl">Free account</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">2</span><span class="lbl">API token</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">3</span><span class="lbl">Connect</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">4</span><span class="lbl">Paste token</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">5</span><span class="lbl">Helper skill</span></button>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>apify.com</span></div>
+                <div class="screen__body">
+                  <div class="uirow"><span class="meal"><span class="ph w80"></span></span></div>
+                  <div class="uirow"><span class="meal"><span class="ph w40"></span></span></div>
+                  <div class="uirow hl"><span class="meal"><b>Sign up for free</b></span><span class="uichip hot">Sign up</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>it's free!</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 1 of 5</span>
+                <h4>Make your free Apify account</h4>
+                <p>Go to <a href="https://apify.com" target="_blank" rel="noopener">apify.com</a> and sign up for free. You won't need a credit card.</p>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Apify &rsaquo; Settings &rsaquo; API &amp; Integrations</span></div>
+                <div class="screen__body">
+                  <div class="uilabel">Personal API tokens</div>
+                  <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-key"/></svg><span class="meal">apify_api_&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span><span class="uichip hot">Copy</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>copy this</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 2 of 5</span>
+                <h4>Copy your API token</h4>
+                <p>This is your own key, so everything runs on your free account. In Apify, click <b>Settings</b>, then <b>API &amp; Integrations</b>. Under <b>Personal API tokens</b>, click the copy button.</p>
+                <p class="walk__tip">Shortcut: <a href="https://console.apify.com/settings/integrations" target="_blank" rel="noopener">console.apify.com/settings/integrations</a></p>
+                <div class="walk__warn"><b>Keep it private.</b> Only paste your token into Claude. Never post it or send it to anyone.</div>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Customize &rsaquo; Connectors</span></div>
+                <div class="screen__body">
+                  <div class="uirow"><b>Connectors</b><span class="uichip hot">+</span><span class="ord">1</span></div>
+                  <div class="uisearch"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Apify<span class="ord" style="margin-left:auto">2</span></div>
+                  <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-apify"/></svg><span class="meal">Apify</span><span class="uichip">Connect</span><span class="ord">3</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>then connect</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 3 of 5</span>
+                <h4>Connect Apify to Claude</h4>
+                <p>Click <b>Customize</b>, then <b>Connectors</b>. Click <b>+</b>, then <b>Browse connectors</b>. Search for <b>Apify</b> and click <b>Connect</b>.</p>
+                <p class="walk__tip">Don't see it? Click <b>+</b>, then <b>Add custom connector</b>, and paste this link:</p>
+                <div class="prompt">https://mcp.apify.com<button class="cp" type="button">Copy</button></div>
+                <p class="walk__tip">On the free Claude plan you can add only one custom connector, so try Browse connectors first.</p>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Connect Apify</span></div>
+                <div class="screen__body">
+                  <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-key"/></svg><span class="meal">Paste your API token</span><span class="uichip hot">Paste</span></div>
+                  <div class="uirow"><svg class="icon" aria-hidden="true"><use href="#i-apify"/></svg><span class="meal">Or sign in to Apify</span><span class="uichip uichip--ghost">Allow</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>paste it here</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 4 of 5</span>
+                <h4>Paste your token</h4>
+                <p>A window opens. If it asks for your API token, paste the one you copied. If it asks you to sign in instead, sign in to Apify and click <b>Allow</b>.</p>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Customize &rsaquo; Skills</span></div>
+                <div class="screen__body">
+                  <div class="uirow"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg><span class="meal"><span class="ph w40"></span></span><span class="tog"></span></div>
+                  <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-apify"/></svg><span class="meal">apify-helper</span><span class="tog on"></span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>switch it on</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 5 of 5</span>
+                <h4>Add the Apify Helper</h4>
+                <p>This one matters. It makes your free $5 go further, because Claude checks how much a search will use before it runs.</p>
+                <a class="btn btn--sm" href="../naptime-academy-skills/dist/apify-helper.zip" download><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Download Apify Helper</a>
+                <p style="margin-top:12px">Add it like any skill: <b>Customize</b>, then <b>Skills</b>, then <b>+</b>, then <b>Create skill</b>, then <b>Upload a skill</b>. Flip it on.</p>
+                <p class="walk__tip">Using Safari on a Mac? If you get a folder instead of a .zip file, go to <b>Safari</b>, then <b>Settings</b>, then <b>General</b>. Uncheck <b>Open "safe" files after downloading</b>, then download it again.</p>
+                <p class="walk__tip">Never added a skill? First turn on <b>Settings</b>, then <b>Capabilities</b>, then <b>Code execution and file creation</b>.</p>
+              </div>
+            </div>
+            <div class="walk__nav">
+              <button type="button" class="walk__back">&larr; Back</button>
+              <button type="button" class="btn btn--sm walk__next">Next step &rarr;</button>
+              <a class="btn btn--sm walk__done" data-done>All done, now try it &darr;</a>
+            </div>
+          </div>
+          </div>
+          <div class="door" data-door-panel="code">
+          <div class="walk" data-walk>
+            <div class="walk__tabs" role="tablist" aria-label="Steps">
+              <button type="button" class="walk__tab" role="tab"><span class="n">1</span><span class="lbl">Free account</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">2</span><span class="lbl">API token</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">3</span><span class="lbl">Connect</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">4</span><span class="lbl">Paste token</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">5</span><span class="lbl">Helper skill</span></button>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>apify.com</span></div>
+                <div class="screen__body">
+                  <div class="uirow"><span class="meal"><span class="ph w80"></span></span></div>
+                  <div class="uirow"><span class="meal"><span class="ph w40"></span></span></div>
+                  <div class="uirow hl"><span class="meal"><b>Sign up for free</b></span><span class="uichip hot">Sign up</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>it's free!</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 1 of 5</span>
+                <h4>Make your free Apify account</h4>
+                <p>Go to <a href="https://apify.com" target="_blank" rel="noopener">apify.com</a> and sign up for free. You won't need a credit card.</p>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Apify &rsaquo; Settings &rsaquo; API &amp; Integrations</span></div>
+                <div class="screen__body">
+                  <div class="uilabel">Personal API tokens</div>
+                  <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-key"/></svg><span class="meal">apify_api_&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span><span class="uichip hot">Copy</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>copy this</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 2 of 5</span>
+                <h4>Copy your API token</h4>
+                <p>This is your own key, so everything runs on your free account. In Apify, click <b>Settings</b>, then <b>API &amp; Integrations</b>. Under <b>Personal API tokens</b>, click the copy button.</p>
+                <p class="walk__tip">Shortcut: <a href="https://console.apify.com/settings/integrations" target="_blank" rel="noopener">console.apify.com/settings/integrations</a></p>
+                <div class="walk__warn"><b>Keep it private.</b> Only paste your token into Claude. Never post it or send it to anyone.</div>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Terminal</span></div>
+                <div class="screen__body">
+                  <div class="term"><span class="pr">$</span>claude mcp add --transport http apify https://mcp.apify.com</div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>paste, then Enter</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 3 of 5</span>
+                <h4>Add Apify to Claude Code</h4>
+                <p>Open <b>Terminal</b>, paste this one line, and press Enter:</p>
+                <div class="cmd">claude mcp add --transport http apify https://mcp.apify.com<button class="cp" type="button">Copy</button></div>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Claude Code &rsaquo; /mcp</span></div>
+                <div class="screen__body">
+                  <div class="term"><span class="pr">&gt;</span>/mcp</div>
+                  <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-apify"/></svg><span class="meal">apify</span><span class="uichip hot">Connect</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>pick apify</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 4 of 5</span>
+                <h4>Connect it with your token</h4>
+                <p>Open Claude Code (if it was already open, close it and open it again), type <b>/mcp</b>, and press Enter. Pick <b>apify</b>. If it asks for your API token, paste the one you copied. If it asks you to sign in, sign in and click <b>Allow</b>.</p>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Claude Code</span></div>
+                <div class="screen__body">
+                  <div class="term"><span class="pr">&gt;</span>Add the skill I just put in this folder for me, then tell me how to use it.</div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>then say yes</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 5 of 5</span>
+                <h4>Add the Apify Helper</h4>
+                <p>It makes your free $5 go further, because Claude checks before it runs anything. Download it and move it into the folder you open Claude Code in.</p>
+                <a class="btn btn--sm" href="../naptime-academy-skills/dist/apify-helper.zip" download><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Download Apify Helper</a>
+                <p style="margin-top:12px">Then open Claude Code in that folder and paste this:</p>
+                <div class="prompt">Add the skill I just put in this folder for me, then tell me how to use it.<button class="cp" type="button">Copy</button></div>
+              </div>
+            </div>
+            <div class="walk__nav">
+              <button type="button" class="walk__back">&larr; Back</button>
+              <button type="button" class="btn btn--sm walk__next">Next step &rarr;</button>
+              <a class="btn btn--sm walk__done" data-done>All done, now try it &darr;</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cream rule" id="apify-try">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">Start here</span>
+          <h2>Your <em>first try.</em></h2>
+          <p class="lead-lg">Paste this, put in your handle, and see what comes back.</p>
+          <div class="prompt">Using Apify, look at my Instagram account @[your handle]. Show me my 3 best posts from the last 3 months and what they have in common.<button class="cp" type="button">Copy</button></div>
+        </div>
+        <div class="screen chat">
+          <div class="screen__bar"><i></i><i></i><i></i><span>Claude</span></div>
+          <div class="screen__body">
+            <div class="msg msg--you"><span class="msg__who">You</span><p>Using Apify, look at my Instagram account @yourhandle. Show me my 3 best posts from the last 3 months and what they have in common.</p></div>
+            <div class="msg msg--claude"><span class="msg__who">Claude</span><p>This will use a few cents of your free $5. Want me to run it?</p></div>
+            <div class="msg msg--you"><span class="msg__who">You</span><p>Yes!</p></div>
+            <div class="msg msg--claude"><span class="msg__who">Claude</span>
+              <span class="msg__h">Your 3 best posts</span>
+              <div class="uirow"><span class="meal">Reel: my morning routine</span><span class="uichip uichip--ghost">48K views</span></div>
+              <div class="uirow"><span class="meal">Carousel: 5 things I do at nap time</span><span class="uichip uichip--ghost">2.1K saves</span></div>
+              <div class="uirow"><span class="meal">Reel: my desk tour</span><span class="uichip uichip--ghost">31K views</span></div>
+              <p style="margin-top:10px">What they have in common: each one opens on a real moment from your day, not a talking head.</p>
+            </div>
+            <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>all from your free $5</span></div>
+          </div>
+          <div class="screen__cap">Example</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white rule" id="apify-ideas">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Ideas</span>
+          <h2>10 things to try <em>this week.</em></h2>
+          <p class="lead-lg">Ask Claude in your own words, like these. The Apify Helper picks the right tool for you.</p>
+        </div>
+        <ol class="ideas">
+          <li><span class="ideas__n">01</span><span>&ldquo;What&rsquo;s working in my niche right now?&rdquo;</span></li>
+          <li><span class="ideas__n">02</span><span>&ldquo;Turn the comments on this post into content ideas.&rdquo;</span></li>
+          <li><span class="ideas__n">03</span><span>&ldquo;What do my best posts have in common?&rdquo;</span></li>
+          <li><span class="ideas__n">04</span><span>&ldquo;Tutor me on this reel.&rdquo;</span></li>
+          <li><span class="ideas__n">05</span><span>&ldquo;What&rsquo;s doing well on TikTok for my topic?&rdquo;</span></li>
+          <li><span class="ideas__n">06</span><span>&ldquo;Turn this YouTube video into 5 post ideas.&rdquo;</span></li>
+          <li><span class="ideas__n">07</span><span>&ldquo;Find 20 kids boutiques in my city I could pitch.&rdquo;</span></li>
+          <li><span class="ideas__n">08</span><span>&ldquo;Find the public contact info on these brand websites.&rdquo;</span></li>
+          <li><span class="ideas__n">09</span><span>&ldquo;Read my website and tell me what&rsquo;s confusing.&rdquo;</span></li>
+          <li><span class="ideas__n">10</span><span>&ldquo;Research this for me and give me sources.&rdquo;</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="bg-cream rule" id="apify-recipes">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Copy and paste</span>
+          <h2>Four big <em>time-savers.</em></h2>
+          <p class="lead-lg">Copy one, fill in the brackets, and paste it into Claude.</p>
+        </div>
+        <div class="recipes">
+          <div class="recipe">
+            <h3>What's working in my niche</h3>
+            <div class="prompt">Using Apify, look at the last 3 months of reels from @[account one], @[account two], and @[account three]. Show me the 5 that did best compared to each account's usual views, the exact hook from each, and 5 reel ideas for my niche that use those hooks.<button class="cp" type="button">Copy</button></div>
+          </div>
+          <div class="recipe">
+            <h3>Content ideas from comments</h3>
+            <div class="prompt">Using Apify, pull the comments from these posts: [link], [link]. Group the comments into the questions people keep asking, then turn the top 10 into post ideas with a hook in their own words.<button class="cp" type="button">Copy</button></div>
+          </div>
+          <div class="recipe">
+            <h3>A local pitch list</h3>
+            <div class="prompt">Using Apify, find 20 [type of business] in [your city] on Google Maps. Give me a list with the name, website, Instagram, and a one-line idea for why each would be a good fit.<button class="cp" type="button">Copy</button></div>
+          </div>
+          <div class="recipe">
+            <h3>A video into ideas</h3>
+            <div class="prompt">Using Apify, get what was said in this YouTube video: [link]. Then give me the 5 biggest takeaways and 5 post ideas in my voice.<button class="cp" type="button">Copy</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white rule" id="apify-rules">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">The rules</span>
+          <h2>Use it the <em>right way.</em></h2>
+        </div>
+        <div class="rules">
+          <div class="rulei"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><h4>Public info only</h4><p>Never private accounts, and never personal info that isn't posted publicly.</p></div>
+          <div class="rulei"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><h4>Study, don't copy</h4><p>Learn the pattern, then make it yours. Never repost someone else's words.</p></div>
+          <div class="rulei"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg><h4>Be kind with contacts</h4><p>Send one personal message someone would be glad to get, instead of a mass email.</p></div>
+          <div class="rulei"><svg class="icon" aria-hidden="true"><use href="#i-save"/></svg><h4>Save what matters</h4><p>Apify deletes results after 7 days, so ask Claude for a spreadsheet of anything you want to keep.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pn" aria-label="More skills">
+      <div class="wrap pn__in">
+        <a class="pn__a" href="#tutor-me"><span class="pn__dir">&larr; Previous skill</span><span class="pn__name">Tutor Me</span></a>
+        <a class="pn__a pn__a--next" href="#impeccable"><span class="pn__dir">Next skill &rarr;</span><span class="pn__name">Impeccable</span></a>
+      </div>
+    </nav>
+  </article>
+
+  <!-- ============ 4. IMPECCABLE ============ -->
+  <article class="sk" id="impeccable" data-name="Impeccable" aria-labelledby="impeccable-h">
+    <section class="sk__hero">
+      <div class="wrap sk__top">
+        <div class="sk__head">
+          <div class="skill__tag">
+            <span class="skill__badge"><svg class="icon" aria-hidden="true"><use href="#i-design"/></svg></span>
+            <span class="eyebrow">Skill 4 of 7 &middot; Design</span>
+          </div>
+          <h1 id="impeccable-h" tabindex="-1">Make it look <em>beautifully designed.</em></h1>
+          <p class="lead-lg">Impeccable is a free skill that turns Claude into a real designer. It looks at anything you build, like a sales page, a freebie, or your website, tells you what to fix, and then polishes it for you.</p>
+        </div>
+        <aside class="glance" aria-label="Impeccable at a glance">
+          <a class="btn" href="#impeccable-add">Add it in Claude Code <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+          <ul class="facts">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>Needs Claude Code, the version of Claude that works right on your computer</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Free, and it stays up to date on its own</li>
+          </ul>
+          <div class="note"><b>Not in Claude Code yet?</b> Save this one for later. My <a href="https://www.thestartupmom.com/getting-started-in-claude-code">Getting Started in Claude Code</a> video walks you in.</div>
+        </aside>
+        <div class="sk__why">
+          <h3>Why I love it</h3>
+          <p>It's the skill I use the most, by a lot. It's my secret weapon for designing with AI.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white" id="impeccable-demo">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">See it in action</span>
+          <h2>A designer <em>on call.</em></h2>
+          <p class="lead-lg">Point it at something you made. It tells you what to fix, then fixes it.</p>
+        </div>
+        <div class="screen chat">
+          <div class="screen__bar"><i></i><i></i><i></i><span>Claude Code</span></div>
+          <div class="screen__body">
+            <div class="msg msg--you"><span class="msg__who">You</span><p>/impeccable critique my sales page</p></div>
+            <div class="msg msg--claude"><span class="msg__who">Claude</span>
+              <span class="msg__h">Here's what I'd fix first</span>
+              <ol>
+                <li>Your headline and your button are fighting for attention. Let the button be the only bright thing.</li>
+                <li>Your price is hard to find. Move it up, right next to the button.</li>
+                <li>There are three fonts. Pick two.</li>
+              </ol>
+              <p>Want me to polish it for you?</p>
+            </div>
+            <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>just say yes</span></div>
+          </div>
+          <div class="screen__cap">Example</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cream" id="impeccable-add">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">Do this once</span>
+          <h2>Add it in <em>Claude Code.</em></h2>
+          <p class="lead-lg">Three quick steps. There's nothing to download, because it installs straight from its maker and stays up to date.</p>
+        </div>
+        <div class="walk" data-walk>
+          <div class="walk__tabs" role="tablist" aria-label="Steps">
+            <button type="button" class="walk__tab" role="tab"><span class="n">1</span><span class="lbl">Add it</span></button>
+            <button type="button" class="walk__tab" role="tab"><span class="n">2</span><span class="lbl">Install it</span></button>
+            <button type="button" class="walk__tab" role="tab"><span class="n">3</span><span class="lbl">Teach it your brand</span></button>
+          </div>
+
+          <div class="walk__frame" role="tabpanel">
+            <div class="screen">
+              <div class="screen__bar"><i></i><i></i><i></i><span>Claude Code</span></div>
+              <div class="screen__body">
+                <div class="term"><span class="pr">&gt;</span>/plugin marketplace add pbakaus/impeccable</div>
+                <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>paste, then Enter</span></div>
+              </div>
+              <div class="screen__cap">Example</div>
+            </div>
+            <div class="walk__cap">
+              <span class="step-of">Step 1 of 3</span>
+              <h4>Add it to your plugins</h4>
+              <p>Paste this into Claude Code and press Enter:</p>
+              <div class="cmd">/plugin marketplace add pbakaus/impeccable<button class="cp" type="button">Copy</button></div>
+            </div>
+          </div>
+
+          <div class="walk__frame" role="tabpanel">
+            <div class="screen">
+              <div class="screen__bar"><i></i><i></i><i></i><span>Claude Code &rsaquo; /plugin</span></div>
+              <div class="screen__body">
+                <div class="uirow"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg><span class="meal"><span class="ph w40"></span></span></div>
+                <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-design"/></svg><span class="meal">impeccable</span><span class="uichip hot">Install</span></div>
+                <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>install this one</span></div>
+              </div>
+              <div class="screen__cap">Example</div>
+            </div>
+            <div class="walk__cap">
+              <span class="step-of">Step 2 of 3</span>
+              <h4>Install it</h4>
+              <p>Type <b>/plugin</b> and press Enter. Find <b>Impeccable</b> in the list and install it.</p>
+            </div>
+          </div>
+
+          <div class="walk__frame" role="tabpanel">
+            <div class="screen">
+              <div class="screen__bar"><i></i><i></i><i></i><span>Claude Code</span></div>
+              <div class="screen__body">
+                <div class="term"><span class="pr">&gt;</span>/impeccable init</div>
+                <div class="msg msg--claude"><span class="msg__who">Claude</span><p>Let's teach me your brand. First, who is your website for?</p></div>
+              </div>
+              <div class="screen__cap">Example</div>
+            </div>
+            <div class="walk__cap">
+              <span class="step-of">Step 3 of 3</span>
+              <h4>Teach it your brand</h4>
+              <p>Do this once for each project. It asks you a few questions about your brand.</p>
+              <div class="cmd">/impeccable init<button class="cp" type="button">Copy</button></div>
+            </div>
+          </div>
+
+          <div class="walk__nav">
+            <button type="button" class="walk__back">&larr; Back</button>
+            <button type="button" class="btn btn--sm walk__next">Next step &rarr;</button>
+            <a class="btn btn--sm walk__done" data-done>All done, now try it &darr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white rule" id="impeccable-try">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">The fun part</span>
+          <h2>Then <em>try it.</em></h2>
+          <p class="lead-lg">Point it at anything you've made.</p>
+        </div>
+        <div>
+          <div class="prompt">/impeccable critique my sales page<button class="cp" type="button">Copy</button></div>
+          <div class="prompt">/impeccable polish my freebie page<button class="cp" type="button">Copy</button></div>
+          <p class="words"><b>Critique</b> tells you what's off. <b>Polish</b> cleans it up. You can also try <b>bolder</b> (more exciting) or <b>quieter</b> (calmer).</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pn" aria-label="More skills">
+      <div class="wrap pn__in">
+        <a class="pn__a" href="#apify"><span class="pn__dir">&larr; Previous skill</span><span class="pn__name">Apify</span></a>
+        <a class="pn__a pn__a--next" href="#skill-creator"><span class="pn__dir">Next skill &rarr;</span><span class="pn__name">Skill Creator</span></a>
+      </div>
+    </nav>
+  </article>
+
+  <!-- ============ 5. SKILL CREATOR ============ -->
+  <article class="sk" id="skill-creator" data-name="Skill Creator" aria-labelledby="skill-creator-h">
+    <section class="sk__hero">
+      <div class="wrap sk__top">
+        <div class="sk__head">
+          <div class="skill__tag">
+            <span class="skill__badge"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg></span>
+            <span class="eyebrow">Skill 5 of 7 &middot; Make your own</span>
+          </div>
+          <h1 id="skill-creator-h" tabindex="-1">Build your <em>own skills.</em></h1>
+          <p class="lead-lg">Here's the secret: anything you do more than twice can become a skill. Claude already knows how to build them, so all you do is talk it through. You won't need any code or downloads.</p>
+        </div>
+        <aside class="glance" aria-label="Skill Creator at a glance">
+          <a class="btn" href="#skill-creator-how">See how it works <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+          <ul class="facts">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg>Already built into Claude</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Nothing to download</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>About 10 minutes to make your first one</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="bg-cream" id="skill-creator-how">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">How it works</span>
+          <h2>Just <em>talk it through.</em></h2>
+          <p class="lead-lg">Claude asks the questions. You just answer.</p>
+        </div>
+        <div class="walk" data-walk>
+          <div class="walk__tabs" role="tablist" aria-label="Steps">
+            <button type="button" class="walk__tab" role="tab"><span class="n">1</span><span class="lbl">Ask Claude</span></button>
+            <button type="button" class="walk__tab" role="tab"><span class="n">2</span><span class="lbl">Answer</span></button>
+            <button type="button" class="walk__tab" role="tab"><span class="n">3</span><span class="lbl">Save it</span></button>
+            <button type="button" class="walk__tab" role="tab"><span class="n">4</span><span class="lbl">Flip it on</span></button>
+          </div>
+          <div class="walk__frame" role="tabpanel">
+            <div class="screen">
+              <div class="screen__bar"><i></i><i></i><i></i><span>Claude</span></div>
+              <div class="screen__body">
+                <div class="msg msg--you"><span class="msg__who">You</span><p>I want to create a skill that answers the questions I get in my DMs.</p></div>
+                <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>just say it like this</span></div>
+              </div>
+              <div class="screen__cap">Example</div>
+            </div>
+            <div class="walk__cap">
+              <span class="step-of">Step 1 of 4</span>
+              <h4>Tell Claude what you want</h4>
+              <p>Open a new chat and say, "I want to create a skill for [the job]." Add anything that helps, like a template, an example you love, or your Homebase.</p>
+            </div>
+          </div>
+          <div class="walk__frame" role="tabpanel">
+            <div class="screen">
+              <div class="screen__bar"><i></i><i></i><i></i><span>Claude</span></div>
+              <div class="screen__body">
+                <div class="msg msg--claude"><span class="msg__who">Claude</span><p>Love it. A few quick questions first. What do people ask you most, and how do you usually answer?</p></div>
+                <div class="msg msg--you"><span class="msg__who">You</span><p>Here are my top 5 questions and my answers...</p></div>
+              </div>
+              <div class="screen__cap">Example</div>
+            </div>
+            <div class="walk__cap">
+              <span class="step-of">Step 2 of 4</span>
+              <h4>Answer its questions</h4>
+              <p>Claude asks how you do it and what a great result looks like. The more you share, the better your skill.</p>
+            </div>
+          </div>
+          <div class="walk__frame" role="tabpanel">
+            <div class="screen">
+              <div class="screen__bar"><i></i><i></i><i></i><span>Claude</span></div>
+              <div class="screen__body">
+                <div class="msg msg--claude"><span class="msg__who">Claude</span><p>Your skill is ready.</p></div>
+                <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-zip"/></svg><span class="meal"><b>dm-helper</b></span><span class="uichip uichip--ghost">Skill</span></div>
+                <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>save this</span></div>
+              </div>
+              <div class="screen__cap">Example</div>
+            </div>
+            <div class="walk__cap">
+              <span class="step-of">Step 3 of 4</span>
+              <h4>Save your skill</h4>
+              <p>Claude builds it and packs it into a skill file for you. Save it.</p>
+            </div>
+          </div>
+          <div class="walk__frame" role="tabpanel">
+            <div class="screen">
+              <div class="screen__bar"><i></i><i></i><i></i><span>Customize &rsaquo; Skills</span></div>
+              <div class="screen__body">
+                <div class="uirow"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg><span class="meal"><span class="ph w40"></span></span><span class="tog"></span></div>
+                <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg><span class="meal">dm-helper</span><span class="tog on"></span></div>
+                <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>switch it on</span></div>
+              </div>
+              <div class="screen__cap">Example</div>
+            </div>
+            <div class="walk__cap">
+              <span class="step-of">Step 4 of 4</span>
+              <h4>Flip it on and test it</h4>
+              <p>Turn it on in <b>Customize</b>, then <b>Skills</b>. Then ask for the job. You'll see "Using dm-helper" while Claude works.</p>
+              <p class="walk__tip">In Claude Code? Just say "turn this into a skill" after you finish something you'll want to do again.</p>
+            </div>
+          </div>
+          <div class="walk__nav">
+            <button type="button" class="walk__back">&larr; Back</button>
+            <button type="button" class="btn btn--sm walk__next">Next step &rarr;</button>
+            <a class="btn btn--sm walk__done" data-done>Now pick your first one &darr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white rule" id="skill-creator-try">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">The fun part</span>
+          <h2>Skills to <em>make first.</em></h2>
+          <p class="lead-lg">Copy one to get started.</p>
+        </div>
+        <div>
+          <span class="prompt__label">Answer your DMs</span>
+          <div class="prompt">I want to create a skill that answers the questions I get in my DMs, in my voice. Here are my most common questions and how I usually answer them.<button class="cp" type="button">Copy</button></div>
+          <span class="prompt__label">A weekly email</span>
+          <div class="prompt">I want to create a skill that turns my week of posts into a short, warm email for my list.<button class="cp" type="button">Copy</button></div>
+          <span class="prompt__label">Pitch a brand</span>
+          <div class="prompt">I want to create a skill that writes a friendly pitch email to any brand I paste in.<button class="cp" type="button">Copy</button></div>
+          <div class="note"><b>Pro tip:</b> when a skill is almost right, don't start over. Tell Claude what to change and ask it to update the skill.</div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pn" aria-label="More skills">
+      <div class="wrap pn__in">
+        <a class="pn__a" href="#impeccable"><span class="pn__dir">&larr; Previous skill</span><span class="pn__name">Impeccable</span></a>
+        <a class="pn__a pn__a--next" href="#parent-helper"><span class="pn__dir">Next skill &rarr;</span><span class="pn__name">Parent Helper</span></a>
+      </div>
+    </nav>
+  </article>
+
+  <!-- ============ 6. PARENT HELPER ============ -->
+  <article class="sk" id="parent-helper" data-name="Parent Helper" aria-labelledby="parent-helper-h">
+    <section class="sk__hero">
+      <div class="wrap sk__top">
+        <div class="sk__head">
+          <div class="skill__tag">
+            <span class="skill__badge"><svg class="icon" aria-hidden="true"><use href="#i-dinner"/></svg></span>
+            <span class="eyebrow">Skill 6 of 7 &middot; Home</span>
+          </div>
+          <h1 id="parent-helper-h" tabindex="-1">Let Claude <em>plan dinner.</em></h1>
+          <p class="lead-lg">It plans your dinners around your real week, then makes your grocery list. Busy night with practice? You get the slow cooker meal or leftovers, not a recipe that needs you standing at the stove.</p>
+        </div>
+        <aside class="glance" aria-label="Parent Helper at a glance">
+          <a class="btn" data-dl href="../naptime-academy-skills/dist/parent-helper.zip" download><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Download Parent Helper</a>
+          <ul class="facts">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>About 2 minutes to add</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Works on every Claude plan, even the free one</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-app"/></svg>Use it in the Claude app, Cowork, or Claude Code</li>
+          </ul>
+          <a class="glance__link" href="#parent-helper-add">How to add it &darr;</a>
+        </aside>
+        <div class="sk__why">
+          <h3>What you get</h3>
+          <p>3 to 5 dinners you can say yes to or swap, real recipe links, and a grocery list sorted by aisle. The pantry basics get their own little list at the bottom, so you just delete what you already have.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white" id="parent-helper-demo">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">See it in action</span>
+          <h2>Dinner, <em>handled.</em></h2>
+          <p class="lead-lg">Tell it about your week. You get a plan and a grocery list.</p>
+        </div>
+        <div class="screen chat">
+          <div class="screen__bar"><i></i><i></i><i></i><span>Claude</span></div>
+          <div class="screen__body">
+            <div class="msg msg--you"><span class="msg__who">You</span><p>Plan my week. We have soccer Tuesday and Thursday.</p></div>
+            <div class="msg msg--claude"><span class="msg__who">Claude</span>
+              <span class="msg__h">This week's dinners</span>
+              <div class="uirow"><b>Mon</b><span class="meal">Slow cooker salsa chicken</span><span class="uichip uichip--ghost">10 min</span></div>
+              <div class="uirow"><b>Tue</b><span class="meal">Leftover night (soccer)</span><span class="uichip uichip--ghost">0 min</span></div>
+              <div class="uirow"><b>Wed</b><span class="meal">Sheet pan sausage and veggies</span><span class="uichip uichip--ghost">30 min</span></div>
+              <div class="uirow"><b>Thu</b><span class="meal">Breakfast for dinner (soccer)</span><span class="uichip uichip--ghost">15 min</span></div>
+              <span class="msg__h" style="margin-top:12px">Grocery list</span>
+              <p><b>Produce:</b> peppers, onions, bananas. <b>Meat:</b> chicken, sausage. <b>Dairy:</b> eggs, cheese.</p>
+            </div>
+            <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>sorted by aisle!</span></div>
+          </div>
+          <div class="screen__cap">Example</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cream" id="parent-helper-add">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">Do this once</span>
+          <h2>Add it in <em>2 minutes.</em></h2>
+          <p class="lead-lg">Pick where you use Claude, then follow the steps.</p>
+        </div>
+        <div data-add="parent-helper"><p>Download it with the red button above. Then in Claude, click Customize, then Skills, then +, then Create skill, then Upload a skill. Flip it on.</p></div>
+      </div>
+    </section>
+
+    <section class="bg-white rule" id="parent-helper-try">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">The fun part</span>
+          <h2>Then <em>try it.</em></h2>
+          <p class="lead-lg">Plan the whole week, or just tonight.</p>
+        </div>
+        <div>
+          <div class="prompt">Plan my week.<button class="cp" type="button">Copy</button></div>
+          <div class="prompt">What's for dinner tonight? I have 20 minutes and a pack of chicken thighs.<button class="cp" type="button">Copy</button></div>
+          <div class="note"><b>First time using it?</b> It asks six quick questions (who's eating, allergies, how you like to cook, and your budget) and gives you a Family Profile. Save it in a Claude Project and it never has to ask again. Connect your calendar and it can even see your busy nights.</div>
+          <div class="note"><b>It will never place an order or type a password.</b> You're always the one who checks out.</div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pn" aria-label="More skills">
+      <div class="wrap pn__in">
+        <a class="pn__a" href="#skill-creator"><span class="pn__dir">&larr; Previous skill</span><span class="pn__name">Skill Creator</span></a>
+        <a class="pn__a pn__a--next" href="#sync-truth"><span class="pn__dir">Next skill &rarr;</span><span class="pn__name">Sync Truth</span></a>
+      </div>
+    </nav>
+  </article>
+
+  <!-- ============ 7. SYNC TRUTH ============ -->
+  <article class="sk" id="sync-truth" data-name="Sync Truth" aria-labelledby="sync-truth-h">
+    <section class="sk__hero">
+      <div class="wrap sk__top">
+        <div class="sk__head">
+          <div class="skill__tag">
+            <span class="skill__badge"><svg class="icon" aria-hidden="true"><use href="#i-sync"/></svg></span>
+            <span class="eyebrow">Skill 7 of 7 &middot; Systems</span>
+          </div>
+          <h1 id="sync-truth-h" tabindex="-1">Change it once. <em>Fixed everywhere.</em></h1>
+          <p class="lead-lg">It keeps one list of the facts about your business: what you sell, your prices, your links, and your bio. Change something once, and Claude finds everywhere it shows up, like your Notion or Google Drive, and updates it. For the spots it can't reach, like your Instagram bio, it gives you a checklist.</p>
+        </div>
+        <aside class="glance" aria-label="Sync Truth at a glance">
+          <a class="btn" data-dl href="../naptime-academy-skills/dist/sync-truth.zip" download><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Download Sync Truth</a>
+          <ul class="facts">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>About 2 minutes to add</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Works on every Claude plan, even the free one</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-app"/></svg>Use it in the Claude app, Cowork, or Claude Code</li>
+          </ul>
+          <a class="glance__link" href="#sync-truth-add">How to add it &darr;</a>
+        </aside>
+        <div class="sk__why">
+          <h3>Why it matters</h3>
+          <p>When your price, your link, and your bio match everywhere people find you, you look as put together as you are.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white" id="sync-truth-demo">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">See it in action</span>
+          <h2>One change, <em>fixed everywhere.</em></h2>
+          <p class="lead-lg">Tell it what changed. It updates what it can reach and gives you a checklist for the rest.</p>
+        </div>
+        <div class="screen chat">
+          <div class="screen__bar"><i></i><i></i><i></i><span>Claude</span></div>
+          <div class="screen__body">
+            <div class="msg msg--you"><span class="msg__who">You</span><p>Sync my truth. My mini course is now $37, and my new link is ...</p></div>
+            <div class="msg msg--claude"><span class="msg__who">Claude</span>
+              <div class="uilabel">Updated for you</div>
+              <div class="uirow"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="meal">Notion: offers page</span><span class="uichip uichip--ghost">$27 &rarr; $37</span></div>
+              <div class="uirow"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span class="meal">Google Doc: media kit</span><span class="uichip uichip--ghost">new link</span></div>
+              <div class="uilabel" style="margin-top:12px">Still to do by hand</div>
+              <div class="uirow"><span class="check-sq"></span> Instagram bio</div>
+              <div class="uirow"><span class="check-sq"></span> Link in bio page</div>
+            </div>
+            <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>the rest is a checklist</span></div>
+          </div>
+          <div class="screen__cap">Example</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cream" id="sync-truth-add">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">Do this once</span>
+          <h2>Add it in <em>2 minutes.</em></h2>
+          <p class="lead-lg">Pick where you use Claude, then follow the steps.</p>
+        </div>
+        <div data-add="sync-truth"><p>Download it with the red button above. Then in Claude, click Customize, then Skills, then +, then Create skill, then Upload a skill. Flip it on.</p></div>
+      </div>
+    </section>
+
+    <section class="bg-white rule" id="sync-truth-try">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">The fun part</span>
+          <h2>Then <em>try it.</em></h2>
+          <p class="lead-lg">Tell it what changed.</p>
+        </div>
+        <div>
+          <div class="prompt">Sync my truth. My [offer name] is now $[new price], and my new link is [link].<button class="cp" type="button">Copy</button></div>
+          <div class="note"><b>Homebase or Brand Truth?</b> Your Homebase is how you sound. Your Brand Truth is what's true right now. Your voice rarely changes, but your prices and links change all the time. The first time you use it, it builds your Brand Truth with you in two quick rounds of questions.</div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pn" aria-label="More skills">
+      <div class="wrap pn__in">
+        <a class="pn__a" href="#parent-helper"><span class="pn__dir">&larr; Previous skill</span><span class="pn__name">Parent Helper</span></a>
+        <a class="pn__a pn__a--next" href="#all-skills"><span class="pn__dir">That's all seven &rarr;</span><span class="pn__name">Back to all skills</span></a>
+      </div>
+    </nav>
+  </article>
+</div>
+
+<!-- CLOSE -->
+<section class="close">
+  <div class="wrap">
+    <h2>Now make them <em>your own.</em></h2>
+    <p>You don't need all seven today. Pick the one that would save you the most time this week, add it, and use it once. Then come back for the next one.</p>
+    <p>Tell me which one you added first in <b>All the Claude Things</b>. I want to see what you make.</p>
+    <span class="sig">so proud of you.<br>love, Meg</span>
+  </div>
+</section>
+
+</main>
+
+<!-- The "add it" steps, written once. JS stamps a copy into every [data-add] slot,
+     filling in the skill's name and its download button. -->
+<template id="tpl-add">
+  <div class="doors" data-doors>
+    <div class="seg" role="tablist" aria-label="Where do you use Claude?">
+      <button type="button" role="tab" aria-selected="true" data-door="app"><svg class="icon" aria-hidden="true"><use href="#i-app"/></svg>The Claude app</button>
+      <button type="button" role="tab" aria-selected="false" data-door="code"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>Claude Code</button>
+    </div>
+
+    <div class="door active" data-door-panel="app">
+      <div class="walk" data-walk>
+        <div class="walk__tabs" role="tablist" aria-label="Steps">
+          <button type="button" class="walk__tab" role="tab"><span class="n">1</span><span class="lbl">Turn on a setting</span></button>
+          <button type="button" class="walk__tab" role="tab"><span class="n">2</span><span class="lbl">Download it</span></button>
+          <button type="button" class="walk__tab" role="tab"><span class="n">3</span><span class="lbl">Upload it</span></button>
+          <button type="button" class="walk__tab" role="tab"><span class="n">4</span><span class="lbl">Flip it on</span></button>
+        </div>
+
+        <div class="walk__frame" role="tabpanel">
+          <div class="screen">
+            <div class="screen__bar"><i></i><i></i><i></i><span>Settings &rsaquo; Capabilities</span></div>
+            <div class="screen__body">
+              <div class="uirow"><span class="meal"><span class="ph w80"></span></span><span class="tog"></span></div>
+              <div class="uirow hl"><span class="meal">Code execution and file creation</span><span class="tog on"></span></div>
+              <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>flip this on</span></div>
+            </div>
+            <div class="screen__cap">Example</div>
+          </div>
+          <div class="walk__cap">
+            <span class="step-of">Step 1 of 4</span>
+            <h4>Turn on one setting</h4>
+            <p>Click <b>Settings</b>, then <b>Capabilities</b>. Switch on <b>Code execution and file creation</b>.</p>
+            <p class="walk__tip">Already did Claude Basics? Then it's on, so skip ahead.</p>
+          </div>
+        </div>
+
+        <div class="walk__frame" role="tabpanel">
+          <div class="screen">
+            <div class="screen__bar"><i></i><i></i><i></i><span>Downloads</span></div>
+            <div class="screen__body">
+              <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-zip"/></svg><span class="meal"><b data-fill="slug">skill</b>.zip</span><span class="uichip uichip--ghost">Saved</span></div>
+              <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>leave it zipped!</span></div>
+            </div>
+            <div class="screen__cap">Example</div>
+          </div>
+          <div class="walk__cap">
+            <span class="step-of">Step 2 of 4</span>
+            <h4>Download the skill</h4>
+            <p>Tap the button. It saves a zipped file that ends in <b>.zip</b>. Leave it zipped.</p>
+            <div data-fill="dl"></div>
+            <p class="walk__tip">Using Safari on a Mac? If you get a folder instead of a .zip file, go to <b>Safari</b>, then <b>Settings</b>, then <b>General</b>. Uncheck <b>Open "safe" files after downloading</b>, then download it again.</p>
+          </div>
+        </div>
+
+        <div class="walk__frame" role="tabpanel">
+          <div class="screen">
+            <div class="screen__bar"><i></i><i></i><i></i><span>Customize &rsaquo; Skills</span></div>
+            <div class="screen__body">
+              <div class="uirow"><b>Skills</b><span class="uichip hot">+</span><span class="ord">1</span></div>
+              <div class="pop">
+                <div class="uirow"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg>Create skill<span class="ord">2</span></div>
+                <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>Upload a skill<span class="ord">3</span></div>
+              </div>
+              <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>then pick your file</span></div>
+            </div>
+            <div class="screen__cap">Example</div>
+          </div>
+          <div class="walk__cap">
+            <span class="step-of">Step 3 of 4</span>
+            <h4>Upload it to Claude</h4>
+            <p>Click <b>Customize</b>, then <b>Skills</b>. Click <b>+</b>, then <b>Create skill</b>, then <b>Upload a skill</b>. Pick the file you just downloaded.</p>
+          </div>
+        </div>
+
+        <div class="walk__frame" role="tabpanel">
+          <div class="screen">
+            <div class="screen__bar"><i></i><i></i><i></i><span>Customize &rsaquo; Skills</span></div>
+            <div class="screen__body">
+              <div class="uirow"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg><span class="meal"><span class="ph w40"></span></span><span class="tog"></span></div>
+              <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-make"/></svg><span class="meal" data-fill="slug">skill</span><span class="tog on"></span></div>
+              <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>switch it on</span></div>
+            </div>
+            <div class="screen__cap">Example</div>
+          </div>
+          <div class="walk__cap">
+            <span class="step-of">Step 4 of 4</span>
+            <h4>Flip it on</h4>
+            <p>New skills start switched off. Find <b data-fill="slug">it</b> in your list and turn on the switch. That's it!</p>
+            <p class="walk__tip">Skills work on every Claude plan, even the free one, and they show up in Cowork too.</p>
+          </div>
+        </div>
+
+        <div class="walk__nav">
+          <button type="button" class="walk__back">&larr; Back</button>
+          <button type="button" class="btn btn--sm walk__next">Next step &rarr;</button>
+          <a class="btn btn--sm walk__done" data-done>All done, now try it &darr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="door" data-door-panel="code">
+      <div class="walk" data-walk>
+        <div class="walk__tabs" role="tablist" aria-label="Steps">
+          <button type="button" class="walk__tab" role="tab"><span class="n">1</span><span class="lbl">Download it</span></button>
+          <button type="button" class="walk__tab" role="tab"><span class="n">2</span><span class="lbl">Ask Claude Code</span></button>
+          <button type="button" class="walk__tab" role="tab"><span class="n">3</span><span class="lbl">Say yes</span></button>
+        </div>
+
+        <div class="walk__frame" role="tabpanel">
+          <div class="screen">
+            <div class="screen__bar"><i></i><i></i><i></i><span>my-business</span></div>
+            <div class="screen__body">
+              <div class="uirow"><svg class="icon" aria-hidden="true"><use href="#i-folder"/></svg><span class="meal"><span class="ph w40"></span></span></div>
+              <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-zip"/></svg><span class="meal"><b data-fill="slug">skill</b>.zip</span><span class="uichip uichip--ghost">New</span></div>
+              <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>drop it in here</span></div>
+            </div>
+            <div class="screen__cap">Example</div>
+          </div>
+          <div class="walk__cap">
+            <span class="step-of">Step 1 of 3</span>
+            <h4>Download the skill</h4>
+            <p>Tap the button, then move the file into the folder you open Claude Code in (like the <b>my-business</b> folder from Claude Basics).</p>
+            <div data-fill="dl"></div>
+            <p class="walk__tip">If your Mac unzipped it into a folder, that's okay here. Claude Code can add the folder too.</p>
+          </div>
+        </div>
+
+        <div class="walk__frame" role="tabpanel">
+          <div class="screen">
+            <div class="screen__bar"><i></i><i></i><i></i><span>Claude Code</span></div>
+            <div class="screen__body">
+              <div class="term"><span class="pr">&gt;</span>Add the skill I just put in this folder for me, then tell me how to use it.</div>
+            </div>
+            <div class="screen__cap">Example</div>
+          </div>
+          <div class="walk__cap">
+            <span class="step-of">Step 2 of 3</span>
+            <h4>Ask Claude Code to add it</h4>
+            <p>Open Claude Code in that folder. Paste this and press Enter:</p>
+            <div class="prompt">Add the skill I just put in this folder for me, then tell me how to use it.<button class="cp" type="button">Copy</button></div>
+          </div>
+        </div>
+
+        <div class="walk__frame" role="tabpanel">
+          <div class="screen">
+            <div class="screen__bar"><i></i><i></i><i></i><span>Claude Code</span></div>
+            <div class="screen__body">
+              <div class="term">Claude wants to add <b data-fill="slug">skill</b> to your skills.<div class="opt"><span class="on">Yes</span><span>No</span></div></div>
+              <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>say yes</span></div>
+            </div>
+            <div class="screen__cap">Example</div>
+          </div>
+          <div class="walk__cap">
+            <span class="step-of">Step 3 of 3</span>
+            <h4>Say yes</h4>
+            <p>Say yes when it asks. After that, just ask for the job, or type <b>/<span data-fill="slug">skill</span></b>.</p>
+            <p class="walk__tip">New to Claude Code? My <a href="https://www.thestartupmom.com/getting-started-in-claude-code">Getting Started in Claude Code</a> video walks you in.</p>
+          </div>
+        </div>
+
+        <div class="walk__nav">
+          <button type="button" class="walk__back">&larr; Back</button>
+          <button type="button" class="btn btn--sm walk__next">Next step &rarr;</button>
+          <a class="btn btn--sm walk__done" data-done>All done, now try it &darr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
