@@ -13,6 +13,11 @@ function byId(id){
 if (!id) return null;
 try { return root.querySelector('#' + (window.CSS && CSS.escape ? CSS.escape(id) : id)); } catch (e) { return null; }
 }
+if (typeof base === 'string' && base) {
+main.querySelectorAll('a[href*="naptime-academy-skills/dist/"]').forEach(function(a){
+a.setAttribute('href', base + 'skills/' + a.getAttribute('href').split('/').pop());
+});
+}
 var tpl = byId('tpl-add');
 if (tpl && tpl.content) {
 main.querySelectorAll('[data-add]').forEach(function(slot){
