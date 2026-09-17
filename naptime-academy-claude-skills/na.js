@@ -1,5 +1,4 @@
-/* Naptime Academy: My Favorite Claude Skills. Loaded by the Kajabi theme, pinned to a commit.
-   Fetches na-body.html from the same folder, then runs attach(root): views, walkthroughs, doors, copy. */
+/* Naptime Academy: My Favorite Claude Skills. Loaded by the Kajabi theme, pinned to a commit. */
 (function(){var me=document.currentScript&&document.currentScript.src||'';var base=me.replace(/na\.js(\?.*)?$/,'');
 function attach(root){
 root = root || document;
@@ -117,6 +116,14 @@ var stepPrev = main.querySelector('[data-step="prev"]');
 var stepNext = main.querySelector('[data-step="next"]');
 var toc = main.querySelector('.toc');
 function pageTop(){ return Math.max(0, main.getBoundingClientRect().top + window.pageYOffset - (mast ? mast.offsetHeight : 0)); }
+var touched = false;
+['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function(ev){ window.addEventListener(ev, function(){ touched = true; }, { passive: true, once: true }); });
+function land(fn, how){
+fn();
+if (how !== 'load' && how !== 'settle') return;
+requestAnimationFrame(function(){ requestAnimationFrame(function(){ if (!touched) fn(); }); });
+setTimeout(function(){ if (!touched) fn(); }, 400);
+}
 function setStep(a, id, label){ if (!a) return; a.setAttribute('href', '#' + id); a.setAttribute('aria-label', label); }
 function syncToc(){
 if (!toc) return;
@@ -141,10 +148,10 @@ if (i < ids.length - 1) setStep(stepNext, ids[i + 1], 'Next skill: ' + arts[i + 
 else setStep(stepNext, 'all-skills', 'All skills');
 document.title = art.getAttribute('data-name') + ' · My Favorite Claude Skills';
 if (el === art) {
-window.scrollTo(0, pageTop());
+land(function(){ window.scrollTo(0, pageTop()); }, how);
 } else {
 if (changed) window.scrollTo(0, pageTop());
-el.scrollIntoView({ behavior: (reduce || changed || how !== 'click') ? 'auto' : 'smooth', block: 'start' });
+land(function(){ el.scrollIntoView({ behavior: (reduce || changed || how !== 'click') ? 'auto' : 'smooth', block: 'start' }); }, how);
 }
 if (how === 'click' && changed) { var h = art.querySelector('h1'); if (h) h.focus({ preventScroll: true }); }
 } else {
@@ -153,7 +160,7 @@ current = null;
 main.setAttribute('data-view', 'overview');
 arts.forEach(function(a){ a.classList.remove('is-on'); });
 document.title = baseTitle;
-if (el) el.scrollIntoView({ behavior: (reduce || wasSkill || how !== 'click') ? 'auto' : 'smooth', block: 'start' });
+if (el) land(function(){ el.scrollIntoView({ behavior: (reduce || wasSkill || how !== 'click') ? 'auto' : 'smooth', block: 'start' }); }, how);
 else if (how !== 'load') window.scrollTo(0, pageTop());
 }
 syncToc();
