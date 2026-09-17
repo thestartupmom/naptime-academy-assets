@@ -3,6 +3,8 @@
     <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#bd1b1b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
     <symbol id="i-zip" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M10.5 6v1.5M10.5 9v1.5M10.5 12v1.5"/><rect x="9.5" y="15" width="2" height="3" rx=".5"/></symbol>
     <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3.5 7.5a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9.5 7H20M9.5 12H20M9.5 17H20"/><circle cx="5" cy="7" r="1"/><circle cx="5" cy="12" r="1"/><circle cx="5" cy="17" r="1"/></symbol>
     <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l8-8M16 7l2.5 2.5M14 9l2 2"/></symbol>
     <symbol id="i-caption" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 9h8M8 12h5"/></symbol>
     <symbol id="i-tutor" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/><path d="M8 10.5h5M10.5 8v5"/></symbol>
@@ -1051,8 +1053,10 @@
             <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>About 2 minutes to add</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Works on every Claude plan, even the free one</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-app"/></svg>Use it in the Claude app, Cowork, or Claude Code</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-plug"/></svg><span><b>Even better</b> connected to Google Calendar and Notion</span></li>
           </ul>
           <a class="glance__link" href="#parent-helper-add">How to add it &darr;</a>
+          <a class="glance__link" href="#parent-helper-connect">How to connect them &darr;</a>
         </aside>
         <div class="sk__why">
           <h3>What you get</h3>
@@ -1066,13 +1070,14 @@
         <div class="head split__head">
           <span class="eyebrow">See it in action</span>
           <h2>Dinner, <em>handled.</em></h2>
-          <p class="lead-lg">Tell it about your week. You get a plan and a grocery list.</p>
+          <p class="lead-lg">Here's a week with Google Calendar and Notion connected. You get a plan and a grocery list, and it already knows your busy nights.</p>
         </div>
         <div class="screen chat">
           <div class="screen__bar"><i></i><i></i><i></i><span>Claude</span></div>
           <div class="screen__body">
-            <div class="msg msg--you"><span class="msg__who">You</span><p>Plan my week. We have soccer Tuesday and Thursday.</p></div>
+            <div class="msg msg--you"><span class="msg__who">You</span><p>Plan my week.</p></div>
             <div class="msg msg--claude"><span class="msg__who">Claude</span>
+              <p>I checked your calendar. Soccer is Tuesday and Thursday, so I kept those nights easy.</p>
               <span class="msg__h">This week's dinners</span>
               <div class="uirow"><b>Mon</b><span class="meal">Slow cooker salsa chicken</span><span class="uichip uichip--ghost">10 min</span></div>
               <div class="uirow"><b>Tue</b><span class="meal">Leftover night (soccer)</span><span class="uichip uichip--ghost">0 min</span></div>
@@ -1080,8 +1085,9 @@
               <div class="uirow"><b>Thu</b><span class="meal">Breakfast for dinner (soccer)</span><span class="uichip uichip--ghost">15 min</span></div>
               <span class="msg__h" style="margin-top:12px">Grocery list</span>
               <p><b>Produce:</b> peppers, onions, bananas. <b>Meat:</b> chicken, sausage. <b>Dairy:</b> eggs, cheese.</p>
+              <p>I added all four dinners to your recipe book in Notion.</p>
             </div>
-            <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>sorted by aisle!</span></div>
+            <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>it checked my calendar!</span></div>
           </div>
           <div class="screen__cap">Example</div>
         </div>
@@ -1099,7 +1105,105 @@
       </div>
     </section>
 
-    <section class="bg-white rule" id="parent-helper-try">
+    <section class="bg-white rule" id="parent-helper-connect">
+      <div class="wrap split">
+        <div class="head split__head">
+          <span class="eyebrow">Make it even better</span>
+          <h2>Connect your calendar <em>and Notion.</em></h2>
+          <p class="lead-lg">This is where it really shines. Connect them once, and it plans around your real life.</p>
+        </div>
+        <div>
+          <ul class="wins connect__wins">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg><span><b>It sees your busy nights.</b>With Google Calendar connected, it spots practice, late meetings, and birthday parties, then gives those nights the quick meals.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><span><b>It keeps your recipe book.</b>With Notion connected, it can start a recipe book for you, or pull from the recipes you already saved there. Every dinner you say yes to gets added.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg><span><b>Your list goes shopping with you.</b>It can save the week's dinners and grocery list to Notion, so it's right on your phone at the store.</span></li>
+          </ul>
+          <div class="walk" data-walk>
+            <div class="walk__tabs" role="tablist" aria-label="Steps">
+              <button type="button" class="walk__tab" role="tab"><span class="n">1</span><span class="lbl">Connectors</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">2</span><span class="lbl">Google Calendar</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">3</span><span class="lbl">Allow</span></button>
+              <button type="button" class="walk__tab" role="tab"><span class="n">4</span><span class="lbl">Notion</span></button>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Customize &rsaquo; Connectors</span></div>
+                <div class="screen__body">
+                  <div class="uirow"><b>Connectors</b><span class="uichip hot">+</span><span class="ord">1</span></div>
+                  <div class="pop">
+                    <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Browse connectors<span class="ord">2</span></div>
+                  </div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>start here</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 1 of 4</span>
+                <h4>Open your connectors</h4>
+                <p>In Claude, click <b>Customize</b>, then <b>Connectors</b>. Click <b>+</b>, then <b>Browse connectors</b>.</p>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Browse connectors</span></div>
+                <div class="screen__body">
+                  <div class="uisearch"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Google Calendar</div>
+                  <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg><span class="meal">Google Calendar</span><span class="uichip hot">Connect</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>click connect</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 2 of 4</span>
+                <h4>Find Google Calendar</h4>
+                <p>Search for <b>Google Calendar</b> and click <b>Connect</b>.</p>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Sign in with Google</span></div>
+                <div class="screen__body">
+                  <div class="uirow"><span class="meal"><span class="ph w80"></span></span></div>
+                  <div class="uirow hl"><span class="meal">Let Claude see your calendar</span><span class="uichip hot">Allow</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>then allow</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 3 of 4</span>
+                <h4>Sign in and allow</h4>
+                <p>Pick your Google account and click <b>Allow</b>. Now Claude can check your week whenever you plan dinner.</p>
+              </div>
+            </div>
+            <div class="walk__frame" role="tabpanel">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i><span>Browse connectors</span></div>
+                <div class="screen__body">
+                  <div class="uisearch"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Notion</div>
+                  <div class="uirow hl"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg><span class="meal">Notion</span><span class="uichip hot">Connect</span></div>
+                  <div class="scrib"><svg viewBox="0 0 36 28" aria-hidden="true"><path d="M3 25 C 12 22, 22 15, 28 3" marker-end="url(#ah)"/></svg><span>same steps</span></div>
+                </div>
+                <div class="screen__cap">Example</div>
+              </div>
+              <div class="walk__cap">
+                <span class="step-of">Step 4 of 4</span>
+                <h4>Now add Notion</h4>
+                <p>Do the same for Notion: search for <b>Notion</b>, click <b>Connect</b>, sign in, and click <b>Allow</b>.</p>
+                <p class="walk__tip">Keep your recipes in Google Docs instead? Connect <b>Google Drive</b> the same way.</p>
+                <p class="walk__tip">In Claude Code? If you're signed in with the same Claude account, these may already be there. Type <b>/mcp</b> to check.</p>
+              </div>
+            </div>
+            <div class="walk__nav">
+              <button type="button" class="walk__back">&larr; Back</button>
+              <button type="button" class="btn btn--sm walk__next">Next step &rarr;</button>
+              <a class="btn btn--sm walk__done" data-done>All done, now try it &darr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-cream rule" id="parent-helper-try">
       <div class="wrap split">
         <div class="head split__head">
           <span class="eyebrow">The fun part</span>
@@ -1109,7 +1213,7 @@
         <div>
           <div class="prompt">Plan my week.<button class="cp" type="button">Copy</button></div>
           <div class="prompt">What's for dinner tonight? I have 20 minutes and a pack of chicken thighs.<button class="cp" type="button">Copy</button></div>
-          <div class="note"><b>First time using it?</b> It asks six quick questions (who's eating, allergies, how you like to cook, and your budget) and gives you a Family Profile. Save it in a Claude Project and it never has to ask again. Connect your calendar and it can even see your busy nights.</div>
+          <div class="note"><b>First time using it?</b> It asks six quick questions (who's eating, allergies, how you like to cook, and your budget) and gives you a Family Profile. Save it in a Claude Project and it never has to ask again.</div>
           <div class="note"><b>It will never place an order or type a password.</b> You're always the one who checks out.</div>
         </div>
       </div>
@@ -1211,13 +1315,16 @@
   </article>
 </div>
 
-<!-- CLOSE -->
+<!-- CLOSE: a signed note from Meg -->
 <section class="close">
   <div class="wrap">
-    <h2>Now make them <em>your own.</em></h2>
-    <p>You don't need all seven today. Pick the one that would save you the most time this week, add it, and use it once. Then come back for the next one.</p>
-    <p>Tell me which one you added first in <b>All the Claude Things</b>. I want to see what you make.</p>
-    <span class="sig">so proud of you.<br>love, Meg</span>
+    <div class="close__note">
+      <h2>Now make them <em>your own.</em></h2>
+      <p class="close__lead">You don't need all seven today.</p>
+      <p>Pick the one that would save you the most time this week, add it, and use it once. Then come back for the next one.</p>
+      <p>Tell me which one you added first in <a href="https://www.thestartupmom.com/products/communities/v2/thestartupmom/channel/82a50c9b-7ea5-4905-af0e-7a0ad4a3f9d0">All the Claude Things</a>. I want to see what you make.</p>
+      <p class="close__sig">so proud of you.<br>love, Meg</p>
+    </div>
   </div>
 </section>
 
