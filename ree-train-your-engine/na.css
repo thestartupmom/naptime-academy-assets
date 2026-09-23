@@ -218,20 +218,48 @@
 .na .mast__back{min-height:44px;display:inline-flex;align-items:center;}
 .na .btn{min-height:48px;}
 .na .step h4,.na .uirow{cursor:default;}}
+.na .fold{background:var(--white);border:1px solid var(--line);border-radius:20px;margin-top:20px;}
+.na .fold>summary{cursor:pointer;padding:20px 24px;font-family:var(--sans);font-size:17px;font-weight:600;color:var(--ink);}
+.na .fold>summary::marker{color:var(--red);}
+.na .fold[open]>summary{border-bottom:1px solid var(--line);}
+.na .fold__body{padding:24px 24px 4px;}
+.na .fold__body .steps{margin:0;}
 
-/* ===== narrow lesson column ===== */
-.na h1{font-size:56px;}
-.na h2{font-size:34px;}
+/* ===== Kajabi lesson column =====
+   .main-content-container caps content at 780px with 30px padding, inside a
+   .post-body that is the full width right of the module sidebar. Releasing
+   that cap (guarded by :has so it only touches this page) lets the section
+   background bands run edge to edge, with .wrap holding the reading measure. */
+.main-content-container:has(#na-root){max-width:none!important;padding-left:0!important;padding-right:0!important;}
+
+/* one measure: every box shares the wrap's inner edges */
+.na .wrap{max-width:880px;padding:0 28px;}
+.na .screen{max-width:100%;}
+.na .close__note{max-width:100%;}
+.na .close .wrap{max-width:880px;}
+
+/* the canvas sizes display type in vw against a 1080px wrap; vw still reads the
+   full viewport here, so the headline pinned to its 92px cap. */
+.na h1{font-size:60px;}
+.na h2{font-size:37px;}
 .na h3{font-size:26px;}
-.na .close__note h2{font-size:34px;}
-.na .hero{padding:56px 0 48px;}
-.na section{padding:56px 0;}
-.na .wrap{padding:0 8px;}
+.na .close__note h2{font-size:37px;}
+
+/* tightened vertical rhythm */
+.na section{padding:44px 0;}
+.na .hero{padding:44px 0 38px;}
+.na .head{margin-bottom:22px;}
+.na .step{padding-bottom:20px;}
+.na .howi{margin-top:30px;}
+
 @media(max-width:600px){
   .na h1{font-size:40px;}
   .na h2{font-size:30px;}
   .na .close__note h2{font-size:30px;}
-  .na .wrap{padding:0 14px;}
+  .na .wrap{padding:0 16px;}
+  .na section{padding:36px 0;}
+  .na .fold>summary{padding:16px 18px;font-size:16px;}
+  .na .fold__body{padding:18px 18px 2px;}
 }
 @media(max-width:430px){
   .na h1{font-size:34px;}
