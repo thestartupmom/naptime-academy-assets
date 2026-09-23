@@ -242,6 +242,17 @@
 .na .lead{font-weight:400;}
 .na .btn{text-align:center;}
 
+/* Kajabi's own lesson chrome. The theme prints the lesson title as an <h1>
+   above the body, which duplicates this page's own headline, and closes with
+   an <hr> plus 30px of padding that left a white gap under the wheat band. */
+.main-content-container:has(#na-root) > .post-body-title{display:none;}
+.main-content-container:has(#na-root) > hr{display:none;}
+.post-body:has(#na-root){padding-bottom:0!important;}
+
+/* a hairline between sections, so a long scroll still has a sense of place.
+   Matches the rule .close already carried. */
+.na > section + section{border-top:1px solid var(--hairline);}
+
 /* one measure: every box shares the wrap's inner edges */
 .na .wrap{max-width:880px;padding:0 28px;}
 .na .screen{max-width:100%;}
