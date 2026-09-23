@@ -232,6 +232,16 @@
    background bands run edge to edge, with .wrap holding the reading measure. */
 .main-content-container:has(#na-root){max-width:none!important;padding-left:0!important;padding-right:0!important;}
 
+/* Kajabi ships Bootstrap, and three of its utility class names collide with
+   this page's. The damaging one is .close, Bootstrap's dismiss-button style:
+   float:right pushed the whole closing band to the right edge and opacity:.5
+   washed it out. .lead (font-weight:300) and .btn leak too. Same family of bug
+   as the .reveal collision. */
+.na *{float:none;}
+.na .close{width:auto;opacity:1;text-shadow:none;color:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;}
+.na .lead{font-weight:400;}
+.na .btn{text-align:center;}
+
 /* one measure: every box shares the wrap's inner edges */
 .na .wrap{max-width:880px;padding:0 28px;}
 .na .screen{max-width:100%;}
