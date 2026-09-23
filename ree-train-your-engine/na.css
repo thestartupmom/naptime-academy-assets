@@ -268,8 +268,8 @@
 
 /* alternate cream and white down the page: hero white, then each section
    flips. nth-of-type beats the .center background from the canvas. */
-.na > section:nth-of-type(odd){background:var(--white);}
-.na > section:nth-of-type(even){background:var(--cream);}
+.na > section:nth-of-type(odd):not(.close){background:var(--white);}
+.na > section:nth-of-type(even):not(.close){background:var(--cream);}
 
 /* a mini callout sitting straight under a screen was crowding it */
 .na .screen + .mini{margin-top:26px;}
