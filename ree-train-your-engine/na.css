@@ -91,7 +91,7 @@
 .na .hb .hand{color:var(--wheat);}
 .na .hb-icon{display:block;color:var(--red);margin-bottom:8px;}
 .na .hb-icon svg{width:36px;height:36px;}
-.na .codebox{position:relative;background:#fff;border:1px solid #e8e3d4;border-radius:16px;margin-top:22px;box-shadow:0 16px 36px rgba(77,59,45,.13);}
+.na .codebox{position:relative;background:var(--cream);border:1px solid #e0d9c4;border-radius:16px;margin-top:22px;box-shadow:0 16px 36px rgba(77,59,45,.13);}
 .na .codebox pre{margin:0;padding:46px 24px 24px;max-height:250px;overflow:auto;font-family:var(--mono);font-size:12.5px;line-height:1.75;color:var(--walnut);white-space:pre-wrap;}
 .na .copybtn{position:absolute;top:12px;right:12px;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;background:var(--red);color:#fff;border:1px solid var(--hairline);border-radius:100px;padding:8px 14px;cursor:pointer;}
 .na .copybtn.copied{background:var(--walnut);color:#fff;}
