@@ -266,6 +266,15 @@
 .na h3{font-size:26px;}
 .na .close__note h2{font-size:37px;}
 
+/* alternate cream and white down the page: hero white, then each section
+   flips. nth-of-type beats the .center background from the canvas. */
+.na > section:nth-of-type(odd){background:var(--white);}
+.na > section:nth-of-type(even){background:var(--cream);}
+
+/* a mini callout sitting straight under a screen was crowding it */
+.na .screen + .mini{margin-top:26px;}
+.na .mini{margin-top:18px;}
+
 /* tightened vertical rhythm */
 .na section{padding:44px 0;}
 .na .hero{padding:44px 0 38px;}
