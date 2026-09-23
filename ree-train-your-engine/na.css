@@ -218,3 +218,24 @@
 .na .mast__back{min-height:44px;display:inline-flex;align-items:center;}
 .na .btn{min-height:48px;}
 .na .step h4,.na .uirow{cursor:default;}}
+
+/* ===== narrow lesson column ===== */
+.na h1{font-size:56px;}
+.na h2{font-size:34px;}
+.na h3{font-size:26px;}
+.na .close__note h2{font-size:34px;}
+.na .hero{padding:56px 0 48px;}
+.na section{padding:56px 0;}
+.na .wrap{padding:0 8px;}
+@media(max-width:600px){
+  .na h1{font-size:40px;}
+  .na h2{font-size:30px;}
+  .na .close__note h2{font-size:30px;}
+  .na .wrap{padding:0 14px;}
+}
+@media(max-width:430px){
+  .na h1{font-size:34px;}
+  .na h2{font-size:27px;}
+  .na .close__note h2{font-size:27px;}
+}
+
