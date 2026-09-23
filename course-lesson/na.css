@@ -165,17 +165,17 @@
 .na .tog.on::after{left:19px;}
 .na .modechip{font-family:var(--mono);font-size:12px;padding:7px 16px;border-radius:100px;border:1px solid #d9d3c4;color:var(--walnut);background:#fff;}
 .na .modechip.sel{background:var(--red);color:#fff;border-color:var(--hairline);}
-.na .close{background:var(--wheat);border-top:1px solid var(--hairline);}
-.na .close__note{max-width:620px;margin:0 auto;background:var(--white);border:1px solid var(--hairline);border-radius:20px;padding:46px 50px 42px;box-shadow:0 18px 44px rgba(30,30,30,.09);text-align:left;}
-.na .close__note h2{font-size:clamp(38px,4.6vw,54px);margin:0 0 .4em;}
-.na .close__note p{color:var(--walnut);font-size:18px;line-height:1.65;margin:0 0 .9em;}
-.na .close__note a:not(.btn){color:var(--red);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;}
-.na .close__note .close__more{font-size:14px;}
-.na .close__note .close__more a{font-weight:400;}
-.na .close__note .btn{margin-top:6px;}
-.na .close__note .close__sig{margin:26px 0 0;font-family:var(--hand);color:var(--red);font-size:30px;line-height:1.2;transform:rotate(-2deg);transform-origin:left center;}
-@media(max-width:600px){.na .close__note{padding:32px 24px 30px;border-radius:16px;}
-.na .close__note .close__sig{font-size:27px;}}
+.na .finale{background:var(--wheat);border-top:1px solid var(--hairline);}
+.na .finale__note{max-width:620px;margin:0 auto;background:var(--white);border:1px solid var(--hairline);border-radius:20px;padding:46px 50px 42px;box-shadow:0 18px 44px rgba(30,30,30,.09);text-align:left;}
+.na .finale__note h2{font-size:clamp(38px,4.6vw,54px);margin:0 0 .4em;}
+.na .finale__note p{color:var(--walnut);font-size:18px;line-height:1.65;margin:0 0 .9em;}
+.na .finale__note a:not(.btn){color:var(--red);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;}
+.na .finale__note .finale__more{font-size:14px;}
+.na .finale__note .finale__more a{font-weight:400;}
+.na .finale__note .btn{margin-top:6px;}
+.na .finale__note .finale__sig{margin:26px 0 0;font-family:var(--hand);color:var(--red);font-size:30px;line-height:1.2;transform:rotate(-2deg);transform-origin:left center;}
+@media(max-width:600px){.na .finale__note{padding:32px 24px 30px;border-radius:16px;}
+.na .finale__note .finale__sig{font-size:27px;}}
 @media(max-width:820px){.na .doormap{grid-template-columns:1fr;gap:34px;}
 .na .doormap::before{display:none;}
 .na .pick{grid-template-columns:1fr;}
@@ -211,8 +211,8 @@
 @media(max-width:430px){.na h1{font-size:38px;line-height:1.08;}
 .na .hero h1{max-width:100%;}
 .na h2{font-size:31px;}
-.na .close__note h2{font-size:31px;}
-.na .close__note .close__sig{font-size:24px;}}
+.na .finale__note h2{font-size:31px;}
+.na .finale__note .finale__sig{font-size:24px;}}
 @media(pointer:coarse){.na .copybtn{min-height:44px;padding:0 16px;display:inline-flex;align-items:center;}
 .na .codebox pre{padding-top:66px;}
 .na .mast__back{min-height:44px;display:inline-flex;align-items:center;}
@@ -233,12 +233,14 @@
 .main-content-container:has(#na-root){max-width:none!important;padding-left:0!important;padding-right:0!important;}
 
 /* Kajabi ships Bootstrap, and three of its utility class names collide with
-   this page's. The damaging one is .close, Bootstrap's dismiss-button style:
-   float:right pushed the whole closing band to the right edge and opacity:.5
-   washed it out. .lead (font-weight:300) and .btn leak too. Same family of bug
-   as the .reveal collision. */
+   this page's. The closing band used to be .close, which is Bootstrap's
+   dismiss-button: float:right shoved it to the right edge, opacity:.5 washed it
+   out, and :hover + cursor:pointer made the whole card look clickable. Patching
+   one property at a time kept missing others, so the class is now .finale and
+   the collision is gone at the root. .lead (font-weight:300) and .btn still
+   leak and are neutralised below. Same family as the .reveal collision. */
 .na *{float:none;}
-.na .close{width:auto;opacity:1;text-shadow:none;color:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;}
+.na .finale{width:auto;}
 .na .lead{font-weight:400;}
 .na .btn{text-align:center;}
 
@@ -250,26 +252,26 @@
 .post-body:has(#na-root){padding-bottom:0!important;}
 
 /* a hairline between sections, so a long scroll still has a sense of place.
-   Matches the rule .close already carried. */
+   Matches the rule the closing band already carried. */
 .na > section + section{border-top:1px solid var(--hairline);}
 
 /* one measure: every box shares the wrap's inner edges */
 .na .wrap{max-width:880px;padding:0 28px;}
 .na .screen{max-width:100%;}
-.na .close__note{max-width:100%;}
-.na .close .wrap{max-width:880px;}
+.na .finale__note{max-width:100%;}
+.na .finale .wrap{max-width:880px;}
 
 /* the canvas sizes display type in vw against a 1080px wrap; vw still reads the
    full viewport here, so the headline pinned to its 92px cap. */
 .na h1{font-size:60px;}
 .na h2{font-size:37px;}
 .na h3{font-size:26px;}
-.na .close__note h2{font-size:37px;}
+.na .finale__note h2{font-size:37px;}
 
 /* alternate cream and white down the page: hero white, then each section
    flips. nth-of-type beats the .center background from the canvas. */
-.na > section:nth-of-type(odd):not(.close){background:var(--white);}
-.na > section:nth-of-type(even):not(.close){background:var(--cream);}
+.na > section:nth-of-type(odd):not(.finale){background:var(--white);}
+.na > section:nth-of-type(even):not(.finale){background:var(--cream);}
 
 /* a mini callout sitting straight under a screen was crowding it */
 .na .screen + .mini{margin-top:26px;}
@@ -285,7 +287,7 @@
 @media(max-width:600px){
   .na h1{font-size:40px;}
   .na h2{font-size:30px;}
-  .na .close__note h2{font-size:30px;}
+  .na .finale__note h2{font-size:30px;}
   .na .wrap{padding:0 16px;}
   .na section{padding:36px 0;}
   .na .fold>summary{padding:16px 18px;font-size:16px;}
@@ -294,6 +296,6 @@
 @media(max-width:430px){
   .na h1{font-size:34px;}
   .na h2{font-size:27px;}
-  .na .close__note h2{font-size:27px;}
+  .na .finale__note h2{font-size:27px;}
 }
 
