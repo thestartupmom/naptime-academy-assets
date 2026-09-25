@@ -105,6 +105,7 @@
 .na .card__body{min-height:0;}}
 .na .head .lead{font-family:var(--serif);font-size:clamp(24px,2.6vw,30px);line-height:1.25;color:var(--ink);max-width:24em;margin:0 auto 16px;text-wrap:balance;}
 .na .head .dek{font-size:17px;color:var(--muted);}
+.na .head{border-bottom:1px solid var(--hairline);}
 .na .eyebrow{display:block;font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--walnut);margin:0 0 14px;}
 .na .band{background:var(--white);}
 .na .band--cream{background:var(--cream);border-top:1px solid var(--hairline);}
@@ -133,30 +134,24 @@
 .na .pframe{background:var(--white);border:1px solid var(--hairline);border-radius:20px;overflow:hidden;box-shadow:0 18px 44px rgba(30,30,30,.09);}
 .na .pframe__bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid var(--hairline);flex-wrap:wrap;}
 .na .pframe__bar .meta{font-size:11px;}
-.na .pbox{margin:0;max-height:440px;overflow:auto;padding:26px 28px;background:var(--cream);font-family:var(--mono);font-size:13px;line-height:1.7;color:var(--walnut);white-space:pre-wrap;overflow-wrap:anywhere;-webkit-overflow-scrolling:touch;}
+.na .pbox{margin:0;max-height:440px;overflow:auto;padding:26px 28px;background:var(--white);font-family:var(--mono);font-size:13px;line-height:1.7;color:var(--walnut);white-space:pre-wrap;overflow-wrap:anywhere;-webkit-overflow-scrolling:touch;}
 .na .pframe__foot{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;border-top:1px solid var(--hairline);flex-wrap:wrap;}
 .na .pframe__foot span{font-size:14px;color:var(--muted);}
 .na .btn.copied{background:var(--walnut);}
-.na .tip{background:var(--sage);color:#fff;border-top:1px solid var(--hairline);}
-.na .tip .wrap{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;max-width:860px;}
-.na .tip svg{width:46px;height:46px;color:var(--wheat);}
-.na .tip .eyebrow{color:var(--wheat);margin-bottom:8px;}
-.na .tip p{color:rgba(255,255,255,.9);font-size:18px;margin:0;}
-.na .tip p b{color:#fff;font-weight:600;}
 .na .close{background:var(--wheat);border-top:1px solid var(--hairline);}
-.na .close__note{max-width:620px;margin:0 auto;background:var(--white);border:1px solid var(--hairline);border-radius:20px;padding:46px 50px 42px;box-shadow:0 18px 44px rgba(30,30,30,.09);}
-.na .close__note h2{font-size:clamp(38px,4.6vw,54px);margin:0 0 .4em;}
-.na .close__note p{color:var(--walnut);font-size:18px;line-height:1.65;margin:0 0 .9em;}
-.na .close__note a:not(.btn){color:var(--red);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;}
-.na .close__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}
-.na .close__note .close__sig{margin:26px 0 0;font-family:var(--hand);color:var(--red);font-size:30px;line-height:1.2;transform:rotate(-2deg);transform-origin:left center;}
+.na .tipbox{background:var(--white);border:1px solid var(--hairline);border-radius:20px;padding:40px 44px;box-shadow:0 18px 44px rgba(30,30,30,.09);display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;}
+.na .tipbox__ico{width:60px;height:60px;border-radius:50%;background:var(--red);border:1px solid var(--hairline);color:#fff;display:flex;align-items:center;justify-content:center;}
+.na .tipbox__ico svg{width:30px;height:30px;}
+.na .tipbox h2{margin:0 0 .3em;}
+.na .tipbox p{font-size:18px;color:var(--walnut);max-width:40em;}
+.na .tipbox__sig{margin:18px 0 0!important;font-family:var(--hand);color:var(--red)!important;font-size:26px!important;line-height:1.2;transform:rotate(-2deg);transform-origin:left center;}
+.na .back{margin-top:32px;}
 @media(max-width:860px){.na .gets,.na .steps{grid-template-columns:1fr;}
 .na .start{grid-template-columns:1fr;gap:26px;padding:32px 26px;}
 .na .start__side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:24px;}}
 @media(max-width:600px){.na .pbox{max-height:380px;padding:20px 18px;font-size:12.5px;}
 .na .pframe{border-radius:14px;}
-.na .tip .wrap{grid-template-columns:1fr;gap:14px;}
-.na .close__note{padding:32px 24px 30px;border-radius:16px;}
-.na .close__note .close__sig{font-size:27px;}
+.na .tipbox{grid-template-columns:1fr;gap:18px;padding:30px 24px;border-radius:16px;}
+.na .tipbox__ico{width:52px;height:52px;}
 .na .steps li{grid-template-columns:42px 1fr;}
 .na .steps li::before{font-size:36px;}}
