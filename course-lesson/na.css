@@ -299,3 +299,21 @@
   .na .finale__note h2{font-size:27px;}
 }
 
+
+/* ===== language toggle (English / Español), no JavaScript =====
+   Body carries <span id="na-en"> and <span id="na-es"> anchors at the top of #na-root and a
+   nav.na-lang linking to them. :target on #na-es flips the page. Both languages live inside each
+   section as div.na-en / div.na-es so the section-order cream/white alternation is untouched. */
+.na .na-anchor{display:block;height:0;scroll-margin-top:120px;}
+.na .na-lang{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin:-34px 0 26px;font-family:'Cousine',ui-monospace,monospace;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;}
+.na .na-lang a{text-decoration:none;color:rgba(30,30,30,.45);padding:4px 0;border-bottom:1.5px solid transparent;line-height:1;}
+.na .na-lang i{font-style:normal;color:rgba(30,30,30,.25);}
+.na .na-lang .na-lang__en{color:#bd1b1b;border-bottom-color:#bd1b1b;}
+#na-root:has(#na-es:target) .na-lang .na-lang__en{color:rgba(30,30,30,.45);border-bottom-color:transparent;}
+#na-root:has(#na-es:target) .na-lang .na-lang__es{color:#bd1b1b;border-bottom-color:#bd1b1b;}
+.na div.na-es,.na span.na-es{display:none;}
+#na-root:has(#na-es:target) div.na-es{display:block;}
+#na-root:has(#na-es:target) span.na-es{display:inline;}
+#na-root:has(#na-es:target) .na-en{display:none;}
+.na .na-subs{display:inline-block;margin-top:14px;font-family:'Inter',system-ui,sans-serif;font-size:14px;color:#1e1e1e;background:#f8f6ee;border:1px solid #e7e3d9;border-radius:100px;padding:8px 16px;}
+@media(max-width:600px){.na .na-lang{margin:-18px 0 22px;}}
