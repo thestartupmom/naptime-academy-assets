@@ -319,13 +319,15 @@
 .na .na-subs{display:inline-block;margin-top:14px;font-family:'Inter',system-ui,sans-serif;font-size:14px;color:#1e1e1e;background:#f8f6ee;border:1px solid #e7e3d9;border-radius:100px;padding:8px 16px;}
 @media(max-width:600px){.na .na-lang{margin:-18px 0 22px;}}
 
-/* 2026-09-28 hierarchy (Meg): in a numbered-step section the label that heads the steps is the
-   section headline (serif) and each step title is Clash. A label sitting directly on a heading
-   stays a Clash kicker, and the hero + finale are untouched. */
-.na section:not(.hero) .eyebrow:has(~ .steps):not(:has(~ .eyebrow ~ .steps)):not(:has(+ h1,+ h2,+ h3,+ h4)){font-family:var(--serif);font-weight:400;font-size:36px;line-height:1.08;text-transform:none;letter-spacing:0;color:var(--ink);margin:0 0 18px;text-wrap:balance;}
+/* 2026-09-28 hierarchy (Meg): a section label that stands on its own (not sitting on a heading)
+   is the section headline, in serif. Hero and finale kickers stay Clash, and so does any label
+   directly above an h1-h4. Step titles are Clash. */
+.na section:not(.hero):not(.finale) .wrap>.eyebrow:not(:has(+ h1,+ h2,+ h3,+ h4)),
+.na section:not(.hero):not(.finale) .wrap>:is(.na-en,.na-es)>.eyebrow:not(:has(+ h1,+ h2,+ h3,+ h4)){font-family:var(--serif);font-weight:400;font-size:36px;line-height:1.08;text-transform:none;letter-spacing:0;color:var(--ink);margin:0 0 18px;text-wrap:balance;}
 .na .step h4{font-family:var(--display);font-weight:600;font-size:15px;line-height:1.35;text-transform:uppercase;letter-spacing:.1em;margin:7px 0 8px;}
 .na .step h4 span[style],.na .step h4 code{text-transform:none;letter-spacing:normal;}
 @media(max-width:560px){
-.na section:not(.hero) .eyebrow:has(~ .steps):not(:has(~ .eyebrow ~ .steps)):not(:has(+ h1,+ h2,+ h3,+ h4)){font-size:30px;}
+.na section:not(.hero):not(.finale) .wrap>.eyebrow:not(:has(+ h1,+ h2,+ h3,+ h4)),
+.na section:not(.hero):not(.finale) .wrap>:is(.na-en,.na-es)>.eyebrow:not(:has(+ h1,+ h2,+ h3,+ h4)){font-size:30px;}
 .na .step h4{font-size:14px;letter-spacing:.08em;}
 }
