@@ -324,7 +324,7 @@
    stays a Clash kicker, and the hero + finale are untouched. */
 .na section:not(.hero) .eyebrow:has(~ .steps):not(:has(~ .eyebrow ~ .steps)):not(:has(+ h1,+ h2,+ h3,+ h4)){font-family:var(--serif);font-weight:400;font-size:36px;line-height:1.08;text-transform:none;letter-spacing:0;color:var(--ink);margin:0 0 18px;text-wrap:balance;}
 .na .step h4{font-family:var(--display);font-weight:600;font-size:15px;line-height:1.35;text-transform:uppercase;letter-spacing:.1em;margin:7px 0 8px;}
-.na .step h4 span,.na .step h4 code,.na .step h4 b{text-transform:none;letter-spacing:normal;}
+.na .step h4 span[style],.na .step h4 code{text-transform:none;letter-spacing:normal;}
 @media(max-width:560px){
 .na section:not(.hero) .eyebrow:has(~ .steps):not(:has(~ .eyebrow ~ .steps)):not(:has(+ h1,+ h2,+ h3,+ h4)){font-size:30px;}
 .na .step h4{font-size:14px;letter-spacing:.08em;}
