@@ -499,7 +499,7 @@
   box-shadow:0 12px 24px -14px rgba(30,30,30,.45);}
 .na .cad__prints i:nth-child(1){transform:rotate(-9deg) translateX(-8px);}
 .na .cad__prints i:nth-child(2){transform:rotate(6deg) translateX(7px);background:#e7dcc0;}
-.na .cad__prints i:nth-child(3){transform:rotate(-1deg);background:url(https://cdn.jsdelivr.net/gh/thestartupmom/naptime-academy-assets@07b534e1ec3569374d387917be1bd9e9af0dbb89/behind-the-reel/img/launch-reel-cover.jpg) 50% 30%/cover;}
+.na .cad__prints i:nth-child(3){transform:rotate(-1deg);background:url(https://cdn.jsdelivr.net/gh/thestartupmom/naptime-academy-assets@dd59d5f64610f38778faf5e5e26ec0de9be6e740/behind-the-reel/img/launch-reel-cover.jpg) 50% 30%/cover;}
 .na .cad__rule{height:1px;background:var(--line);margin:34px 0 30px;}
 .na .cad__lib + .cad__rule + .cad__notjust{font-size:13px;}
 @media(max-width:600px){.na .cad__lib{flex-direction:column;align-items:flex-start;gap:20px;padding:22px 20px;}
