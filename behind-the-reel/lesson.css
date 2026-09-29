@@ -333,6 +333,7 @@
 }
 
 /* ===== Behind the Reel lesson components (behind-the-reel/btr.css) ===== */
+.na{--line:#e7e3d9;}
 .na .mock{margin-top:14px;}
 .na .drop{position:relative;height:210px;border:1px solid #d9d3c4;border-radius:12px;background:#fff;box-shadow:0 10px 26px rgba(30,30,30,.07);overflow:hidden;}
 .na .drop__bar{position:relative;z-index:2;display:flex;align-items:center;gap:6px;padding:9px 12px;background:#efe9dc;border-bottom:1px solid #d9d3c4;}
@@ -498,7 +499,7 @@
   box-shadow:0 12px 24px -14px rgba(30,30,30,.45);}
 .na .cad__prints i:nth-child(1){transform:rotate(-9deg) translateX(-8px);}
 .na .cad__prints i:nth-child(2){transform:rotate(6deg) translateX(7px);background:#e7dcc0;}
-.na .cad__prints i:nth-child(3){transform:rotate(-1deg);background:url(https://cdn.jsdelivr.net/gh/thestartupmom/naptime-academy-assets@83ed805f3a0fe44660d87a65312c0056692f6c82/behind-the-reel/img/launch-reel-cover.jpg) 50% 30%/cover;}
+.na .cad__prints i:nth-child(3){transform:rotate(-1deg);background:url(https://cdn.jsdelivr.net/gh/thestartupmom/naptime-academy-assets@07b534e1ec3569374d387917be1bd9e9af0dbb89/behind-the-reel/img/launch-reel-cover.jpg) 50% 30%/cover;}
 .na .cad__rule{height:1px;background:var(--line);margin:34px 0 30px;}
 .na .cad__lib + .cad__rule + .cad__notjust{font-size:13px;}
 @media(max-width:600px){.na .cad__lib{flex-direction:column;align-items:flex-start;gap:20px;padding:22px 20px;}
