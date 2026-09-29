@@ -503,7 +503,7 @@
   box-shadow:0 12px 24px -14px rgba(30,30,30,.45);}
 .na .cad__prints i:nth-child(1){transform:rotate(-9deg) translateX(-8px);}
 .na .cad__prints i:nth-child(2){transform:rotate(6deg) translateX(7px);background:#e7dcc0;}
-.na .cad__prints i:nth-child(3){transform:rotate(-1deg);background:url(https://cdn.jsdelivr.net/gh/thestartupmom/naptime-academy-assets@c82a43956dcbecdcfc6ed4d5830d3ade1502427a/behind-the-reel/img/launch-reel-cover.jpg) 50% 30%/cover;}
+.na .cad__prints i:nth-child(3){transform:rotate(-1deg);background:url(https://cdn.jsdelivr.net/gh/thestartupmom/naptime-academy-assets@c7387feb45fa02877cb36f21a24a5dfa54736fbe/behind-the-reel/img/launch-reel-cover.jpg) 50% 30%/cover;}
 .na .cad__rule{height:1px;background:var(--line);margin:34px 0 30px;}
 .na .cad__lib + .cad__rule + .cad__notjust{font-size:13px;}
 @media(max-width:600px){.na .cad__lib{flex-direction:column;align-items:flex-start;gap:20px;padding:22px 20px;}
@@ -545,6 +545,7 @@
 .na .close__note a:not(.btn){color:var(--red);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;}
 .na .btr-close .back{max-width:620px;margin:32px auto 0;}
 .na .btn--ghost{background:var(--white);color:var(--ink);}
+.na .btn--ghost:hover,.na .btn--ghost:focus{background:var(--white);color:var(--ink);border-color:var(--hairline);box-shadow:0 10px 24px rgba(30,30,30,.12);}
 .na .close__note .close__sig{margin:26px 0 0;font-family:var(--hand);color:var(--red);font-size:30px;line-height:1.2;transform:rotate(-2deg);transform-origin:left center;}
 @media(max-width:600px){.na .place{grid-template-columns:1fr;gap:18px;}
 .na .place__still{max-width:250px;margin:0 auto;width:100%;}
