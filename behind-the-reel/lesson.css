@@ -503,7 +503,7 @@
   box-shadow:0 12px 24px -14px rgba(30,30,30,.45);}
 .na .cad__prints i:nth-child(1){transform:rotate(-9deg) translateX(-8px);}
 .na .cad__prints i:nth-child(2){transform:rotate(6deg) translateX(7px);background:#e7dcc0;}
-.na .cad__prints i:nth-child(3){transform:rotate(-1deg);background:url(https://cdn.jsdelivr.net/gh/thestartupmom/naptime-academy-assets@e7dad4812af817e9615f257eb57923ad078c2ed4/behind-the-reel/img/launch-reel-cover.jpg) 50% 30%/cover;}
+.na .cad__prints i:nth-child(3){transform:rotate(-1deg);background:url(https://cdn.jsdelivr.net/gh/thestartupmom/naptime-academy-assets@c858167e15be823678252e1d1d7972c51c32a2e5/behind-the-reel/img/launch-reel-cover.jpg) 50% 30%/cover;}
 .na .cad__rule{height:1px;background:var(--line);margin:34px 0 30px;}
 .na .cad__lib + .cad__rule + .cad__notjust{font-size:13px;}
 @media(max-width:600px){.na .cad__lib{flex-direction:column;align-items:flex-start;gap:20px;padding:22px 20px;}
@@ -567,7 +567,7 @@
 .na .hero--reel .hero__top{grid-area:top;}
 .na .hero--reel .hero__bot{grid-area:bot;align-self:start;}
 .na .hero--reel .hero__phone{grid-area:phone;align-self:center;}
-.na .hero--reel h1,.na .hero--reel .lead{margin-left:0;margin-right:0;}
+.na .hero--reel h1,.na .hero--reel .lead,.na .hero--reel .first-note{margin-left:0;margin-right:0;}
 .na .hero--reel .pill-row{justify-content:flex-start;}
 .na .rphone{width:272px;aspect-ratio:9/16;background:#fff;border:1px solid var(--hairline);border-radius:34px;padding:9px;
   transform:rotate(-2.2deg);box-shadow:0 46px 74px -30px rgba(74,58,38,.44);}
@@ -581,6 +581,6 @@
 .na .rphone__play:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
 @media(max-width:600px){.na .hero--reel .wrap{grid-template-columns:1fr;grid-template-areas:"top" "phone" "bot";text-align:center;}
 .na .hero--reel .hero__phone{margin:6px auto 30px;}
-.na .hero--reel h1,.na .hero--reel .lead{margin-left:auto;margin-right:auto;}
+.na .hero--reel h1,.na .hero--reel .lead,.na .hero--reel .first-note{margin-left:auto;margin-right:auto;}
 .na .hero--reel .pill-row{justify-content:center;}
 .na .rphone{width:min(236px,66vw);}}
