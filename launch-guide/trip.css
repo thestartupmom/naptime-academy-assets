@@ -186,3 +186,5 @@
 .tlg .lead-mobile .tsm-hand{display:block;margin-top:14px}
 .tlg .again-line{font-size:28px}
 .tlg .again-btn{display:block;width:100%;padding:20px 16px}}
+#tlg-root.tlg a.primary-cta,#tlg-root.tlg a.primary-cta:visited{color:#fff !important}
+#tlg-root.tlg a.secondary-cta,#tlg-root.tlg a.secondary-cta:visited{color:#4d3b2d !important}
