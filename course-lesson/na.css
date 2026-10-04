@@ -331,3 +331,7 @@
 .na section:not(.hero):not(.finale) .wrap>:is(.na-en,.na-es)>.eyebrow:not(:has(+ h1,+ h2,+ h3,+ h4)){font-size:30px;}
 .na .step h4{font-size:14px;letter-spacing:.08em;}
 }
+
+/* 2026-10-03 (Meg): tap-to-pick swatches ripple once, then rest. Uniform lift, no tilt. Used inline as
+   animation:naWave 3.6s ease-in-out <i*.12>s infinite. Reduced motion already turns it off. */
+@keyframes naWave{0%,24%,100%{transform:none}8%{transform:translateY(-7px)}15%{transform:translateY(1px)}}
