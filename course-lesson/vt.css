@@ -1,0 +1,19 @@
+/* The visual editor lesson's step-by-step tour (lesson 2201190764). Loaded beside na.css; scoped to .na. */
+.na .vt{max-width:880px;margin:0 auto;}
+.na .vt-ch{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:0 0 14px;}
+.na .vt-ch button{display:inline-flex;align-items:center;min-height:30px;padding:0 12px;border-radius:100px;cursor:pointer;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;background:#fff;color:#1e1e1e;border:1px solid #dcdad3;}
+.na .vt-c{box-shadow:0 22px 48px -24px rgba(30,30,30,.45);border-radius:16px;}
+.na .vt-f{position:relative;overflow:hidden;border-radius:16px 16px 0 0;border:1px solid #1e1e1e;border-bottom:0;background:#f8f6ee;}
+.na .vt-f img{display:block;width:100%;height:auto;}
+.na .vt-f svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
+.na .vt-f .vt-d{fill:rgba(18,14,10,.38);fill-rule:evenodd;}
+.na .vt-f rect{fill:none;stroke:#bd1b1b;stroke-width:3;vector-effect:non-scaling-stroke;}
+.na .vt-p{aspect-ratio:1920/1350;display:flex;align-items:center;justify-content:center;padding:4% 6%;box-sizing:border-box;}
+.na .vt-b{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding:18px 22px;border:1px solid #1e1e1e;border-radius:0 0 16px 16px;background:#fff;}
+.na .vt-t{flex:1 1 260px;min-width:0;text-align:left;}
+.na .vt-t .vt-l{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#bd1b1b;}
+.na .vt-t b{display:block;margin-top:6px;font:700 18px/1.25 -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,system-ui,sans-serif;color:#1e1e1e;}
+.na .vt-t .vt-w{display:block;margin-top:4px;font-size:15px;line-height:1.5;color:rgba(30,30,30,.78);}
+.na .vt-n{display:flex;gap:8px;flex:none;}
+.na .vt-n button{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 16px;border-radius:100px;font:600 14px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',Inter,system-ui,sans-serif;cursor:pointer;background:#bd1b1b;color:#fff;border:0;}
+.na .vt-n button.vt-bk{background:#fff;color:#1e1e1e;border:1px solid #dcdad3;}
