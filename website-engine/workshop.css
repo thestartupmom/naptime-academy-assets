@@ -225,3 +225,11 @@ html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll
 .we .cmp-table .ck{position:relative;display:inline-block;width:20px;height:20px;vertical-align:middle}
 .we .cmp-table .ck::before{content:"";position:absolute;left:5px;top:2px;width:6px;height:12px;border:solid #1e1e1e;border-width:0 2.6px 2.6px 0;transform:rotate(43deg)}
 .we .cmp-table td.is-k .ck::before{border-color:#bd1b1b}
+
+/* ===== 2026-11-16 fixes: white base (no stray cream), white button text, red footer bar ===== */
+.we{background:#fff}
+.we .hero{background:#fff}
+.we .why{background:#fff}
+.we .btn{color:#fff !important}
+.we .footer{background:#bd1b1b;border-top:1px solid #000;color:#fff}
+.we .footer .mark,.we .footer .footer__meta{color:#fff}
