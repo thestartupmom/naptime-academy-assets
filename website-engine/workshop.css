@@ -1,3 +1,4 @@
+@font-face{font-family:'Clash Display';src:url('clash-display-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
 @font-face{font-family:'Ugly Dave';src:url('https://cdn.jsdelivr.net/gh/thestartupmom/startupmom-styles@d46c0915c7ffe1d17aaf09b0c2ebfc6769c8caa8/fonts/ugly-dave-regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
 
 
@@ -12,7 +13,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500&display=swap');
 
 :root{
   --red:#bd1b1b; --sage:#395848; --brass:#9c7c4d;
@@ -233,3 +233,7 @@ html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll
 .we .btn{color:#fff !important}
 .we .footer{background:#bd1b1b;border-top:1px solid #000;color:#fff}
 .we .footer .mark,.we .footer .footer__meta{color:#fff}
+
+/* ===== 2026-11-16 root fix: edge-to-edge + brand hairline dividers ===== */
+.nova-block-code{padding:0 !important}                     /* kill Nova's 10px block gutter + the inter-section gaps */
+.we .bf,.we .why,.we .join,.we .footer{border-top:1px solid #000}  /* the usual black hairline divider between sections */
