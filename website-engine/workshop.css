@@ -194,10 +194,12 @@ html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll
   .cdbar__seg{min-width:30px;}
   .cdbar__seg b{font-size:21px;}
   .cdbar__sep{font-size:17px;}
+  .we .why{padding-left:14px;padding-right:14px;}      /* give the table near-full width on phones */
+  .cmp-wrap{margin-top:40px;}
   .cmp-table{min-width:0;}
-  .cmp-table th,.cmp-table td{padding:12px 4px;}
+  .cmp-table th,.cmp-table td{padding:12px 3px;}
   .cmp-table tbody th{white-space:normal;font-size:13px;line-height:1.24;}
-  .cmp-table thead th{font-size:10px;letter-spacing:.04em;}
+  .cmp-table thead th{font-size:10px;letter-spacing:.02em;}
   .cmp-table thead .is-k{font-size:11px;}
   .cmp-ck{width:16px;height:16px;}
 }
@@ -205,6 +207,12 @@ html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll
   .hero h1{font-size:clamp(38px,9.4vw,52px);}
   .hero .lead{font-size:18px;}
   .join-stage{max-width:290px;}
+}
+@media(max-width:360px){                                 /* smallest phones: keep all 4 competitors visible */
+  .we .why{padding-left:10px;padding-right:10px;}
+  .cmp-table th,.cmp-table td{padding:12px 2px;}
+  .cmp-table thead th{letter-spacing:0;}
+  .cmp-ck{width:15px;height:15px;}
 }
 @media(hover:none){
   .btn:hover{transform:none;box-shadow:none;}
