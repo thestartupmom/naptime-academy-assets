@@ -136,3 +136,16 @@
 .na .lead{font-weight:400;}
 .na .btn{text-align:center;}
 
+
+/* ===== native Kajabi lesson download -> branded button (SM-DOWNLOAD-BUTTONS v3, matches REE) ===== */
+/* SM-DOWNLOAD-BUTTONS v3 — big on-brand "Download your files" button (no drop shadow) for any lesson with attached files */
+.post-actions-container .downloads.dropdown{position:static!important;display:inline-block!important;}
+.downloads .downloads-trigger{display:none!important;}
+.downloads-dropdown.dropdown-menu{display:block!important;position:static!important;float:none!important;margin:0!important;padding:0!important;border:none!important;box-shadow:none!important;background:transparent!important;transform:none!important;min-width:0!important;width:auto!important;inset:auto!important;}
+a.downloads-link.media{display:inline-flex!important;align-items:center;gap:10px!important;background:#bd1b1b!important;color:#fff!important;border:1px solid #1e1e1e!important;border-radius:100px!important;padding:16px 30px!important;margin:10px 0!important;max-width:100%!important;font-family:'Clash Display','Inter',system-ui,sans-serif!important;font-weight:700!important;letter-spacing:.06em!important;text-transform:uppercase!important;font-size:15px!important;line-height:1.1!important;text-decoration:none!important;box-shadow:none!important;white-space:normal!important;}
+a.downloads-link.media:hover{background:#a01717!important;}
+a.downloads-link.media .downloads-icon{order:1!important;display:inline-flex!important;flex:none!important;}
+a.downloads-link.media::before{content:"Download your files";order:2;font:inherit;letter-spacing:inherit;}
+a.downloads-link.media .media-body{display:none!important;}
+a.downloads-link.media .downloads-icon svg{width:18px!important;height:18px!important;}
+a.downloads-link.media .downloads-icon svg *{stroke:#fff!important;fill:#fff!important;}
