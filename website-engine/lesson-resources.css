@@ -125,5 +125,9 @@
 .main-content-container:has(#na-root) > .post-body-title{display:none;}
 .main-content-container:has(#na-root) > hr{display:none;}
 .post-body:has(#na-root){padding-bottom:0!important;}
+/* Bootstrap leaks on the member page (proven on the REE lesson): float,
+   .lead font-weight:300, .btn text-align. Scoped neutralisers. */
 .na *{float:none;}
+.na .lead{font-weight:400;}
+.na .btn{text-align:center;}
 
