@@ -41,8 +41,8 @@
 .na .hero h1{margin:0 auto .3em;max-width:13em;}
 .na .hero .lead{font-size:20px;color:var(--walnut);max-width:34em;margin:0 auto;}
 .na .rows{max-width:var(--maxw);margin:0 auto;}
-.na .rows > section:nth-child(odd){background:var(--cream);}
-.na .rows > section:nth-child(even){background:var(--white);}
+
+
 .na .row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,3.5vw,52px);align-items:center;padding:56px 24px;border-top:1px solid var(--line);}
 .na .row:first-child{border-top:0;}
 .na .row__text{min-width:0;order:1;}
