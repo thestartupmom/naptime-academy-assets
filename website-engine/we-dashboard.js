@@ -47,6 +47,13 @@ if (btn && mb && btn.parentNode !== mb) mb.appendChild(btn);
 function build(){
 $$('.dashboard-text').forEach(function(b){ if ($('.ssk-letter, .ssk-help, .we-bump', b)) b.classList.add('ssk-bare'); });
 }
+function kajabiOffer(){
+var a = $('.we-bump'); if (!a) return;
+var p = $('p', a), go = $('.we-bump__go', a);
+var bf = Date.now() < Date.parse('2026-12-01T00:00:00-06:00');
+if (p) p.innerHTML = 'The engine builds on a site you own. Kajabi is where mine lives, and ' + (bf ? 'right now it’s <b>30% off through November 30.</b>' : 'your <b>first 30 days are free.</b>');
+if (go) go.textContent = bf ? 'Get 30% off' : 'Get Kajabi';
+}
 function align(){
 var rail = $('#section-product_sidebar'), vid = $('#section-product_body .dashboard-video, #section-product_body .dashboard-img');
 if (!rail || !vid) return;
@@ -70,7 +77,7 @@ var t = setTimeout(finish, 3300);
 $('.rv-skip', o).addEventListener('click', finish);
 }
 ready(function(){
-build(); hero(); align();
+build(); hero(); kajabiOffer(); align();
 window.addEventListener('resize', align);
 window.addEventListener('load', align);
 if (reveal) playReveal(); else root.classList.remove('ssk-veil');

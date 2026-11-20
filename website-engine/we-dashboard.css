@@ -14,3 +14,7 @@
 /* ===== spacing fix (2026-11-19): clear gap above the sidebar help card ===== */
 .ssk-dash #section-product_sidebar .dashboard-text.ssk-bare:has(.ssk-help){margin-top:34px !important;}
 .ssk-dash #section-product_sidebar .we-bump{margin-bottom:0 !important;}
+
+/* ===== hover border fix (2026-11-19): Kajabi re-adds its native blue card border on .dashboard-text:hover (that :hover beats .ssk-bare's border:0). Kill it on the bare wrapper, and lock the we-bump's own ink border on rest/hover/focus so the lift never breaks the frame. ===== */
+.ssk-dash #section-product_sidebar .dashboard-text.ssk-bare:hover{border:0 !important;background:transparent !important;box-shadow:none !important;}
+.ssk-dash #section-product_sidebar a.we-bump,.ssk-dash #section-product_sidebar a.we-bump:hover,.ssk-dash #section-product_sidebar a.we-bump:focus,.ssk-dash #section-product_sidebar a.we-bump:focus-visible{border:1px solid var(--s-ink) !important;outline:none !important;}
